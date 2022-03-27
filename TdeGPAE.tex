@@ -1,0 +1,39 @@
+% TdeGPAE es el archivo principal para construir el Trabajo de Grado en Estad\'{\i}stica en la Universidad del Valle
+\input{EncabezadoPAE}
+
+%El includeonly sirve para compilar y trabajar s\'{o}lo en la secci\'{o}n seleccionada. Por ejemplo, si dejamos la instucci\'{o}n siguiente, el sistema s\'{o}lo compilar\'{a} los caps\'{\i}tulos 2 y 3.
+%\includeonly{Kap2/Cap2,Kap3/Cap3}
+
+\begin{document}
+\pagenumbering{roman}
+
+\include{HojaTitulo/HojaTituloPAE}
+
+%\renewcommand{\tablename}{\textbf{Tabla}}
+%\renewcommand{\figurename}{\textbf{Figura}}
+%\renewcommand{\listtablename}{Lista de Tablas}
+%\renewcommand{\listfigurename}{Lista de Figuras}
+%\renewcommand{\contentsname}{Contenido}
+\renewcommand{\bibname}{References}
+
+\tableofcontents
+
+\listoffigures
+\addcontentsline{toc}{chapter}{\numberline{}List of figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{\numberline{}List of tables}
+
+%\include{Tab_Simbolos/TabSimbolosPAE} https://www.dickimaw-books.com/latex/thesis/html/makeglossaries.html
+\include{Introduccion/IntroduccionPAE}
+\include{Kap2/Cap2}
+%\include{Kap3/Cap3}
+%\include{Kap4/Cap4}
+%\include{Kap5/Cap5}
+\include{Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE}
+\include{Anexos/AnexosPAE}
+
+\addcontentsline{toc}{chapter}{\numberline{}References}
+\bibliographystyle{agsm}
+\bibliography{BiblioPAE}
+\end{document}
