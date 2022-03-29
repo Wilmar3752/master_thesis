@@ -1,17 +1,23 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: TdeGPAE.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: HojaTitulo/HojaTituloPAE.aux
-A level-1 auxiliary file: Declaracion/DeclaracionPAE.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: Introduccion/IntroduccionPAE.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: Kap2/Cap2.aux
+Reallocating 'name_of_file' (item size: 1) to 65 items.
 A level-1 auxiliary file: Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Anexos/AnexosPAE.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: BiblioPAE.bib
 You've used 1 entry,
             2909 wiz_defined-function locations,
-            651 strings with 5119 characters,
+            650 strings with 5089 characters,
 and the built_in function-call counts, 3721 in all, are:
 = -- 606
 > -- 47
