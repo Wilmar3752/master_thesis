@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  28 MAR 2022 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  28 MAR 2022 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,32 +561,33 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 \openout2 = `HojaTitulo/HojaTituloPAE.aux'.
 
  (HojaTitulo/HojaTituloPAE.tex
-<HojaTitulo/Fig_HojaTitulo/LogoPUC.jpg, id=1, 240.9pt x 321.2pt>
-File: HojaTitulo/Fig_HojaTitulo/LogoPUC.jpg Graphic file (type jpg)
-<use HojaTitulo/Fig_HojaTitulo/LogoPUC.jpg>
-Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/LogoPUC.jpg  used on input line 7.
-(pdftex.def)             Requested size: 96.35828pt x 128.47772pt.
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 11.
+<HojaTitulo/Fig_HojaTitulo/Univalle.jpg, id=1, 563.10374pt x 799.48688pt>
+File: HojaTitulo/Fig_HojaTitulo/Univalle.jpg Graphic file (type jpg)
+<use HojaTitulo/Fig_HojaTitulo/Univalle.jpg>
+Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/Univalle.jpg  used on input line 7.
+(pdftex.def)             Requested size: 84.46191pt x 119.91785pt.
+ [1
+
+
+{C:/Users/JUNIOR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./HojaTitulo/Fig_HojaTitulo/Univalle.jpg>] [2
+
+]
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 34.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 34.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 11.
+LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 34.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 11.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 34.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
-) [1
-
-
-{C:/Users/JUNIOR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./HojaTitulo/Fig_HojaTitulo/LogoPUC.jpg>] [2
-
-] [3] [4] [5
+) [3] [4] [5
 
 ] [6
 
@@ -660,14 +661,14 @@ Appendix A.
 ] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
 Here is how much of TeX's memory you used:
  5626 strings out of 478582
- 90486 string characters out of 2843872
+ 90493 string characters out of 2843872
  371366 words of memory out of 3000000
  23658 multiletter control sequences out of 15000+600000
  505252 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,65p,733b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb>
-Output written on TdeGPAE.pdf (16 pages, 110200 bytes).
+Output written on TdeGPAE.pdf (16 pages, 158899 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
