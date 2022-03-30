@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  29 MAR 2022 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  29 MAR 2022 21:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,25 +619,21 @@ File: ujkpsyc.fd 2006/08/15 v1.0
  (Introduccion/IntroduccionPAE.tex
 Chapter 1.
 
-Package natbib Warning: Citation `Harvard:2008' on page 1 undefined on input line 3.
+Underfull \vbox (badness 1552) has occurred while \output is active []
 
-)
-Overfull \hbox (1.46669pt too wide) in paragraph at lines 3--28
-\OT1/jkp/m/n/12 tecedentes te[]oricos y pr[]acticos), los ob-je-tivos, los al-cances, las lim-ita-ciones, la metodolog[]^^Pa
- []
-
-[1
+ [1
 
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 78.
+ (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
+File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
+)) [2]
 \openout2 = `Kap2/Cap2.aux'.
 
  (Kap2/Cap2.tex
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 15.
-(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
-File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)) [2
+) [3
 
 
 
@@ -647,7 +643,7 @@ File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
 
  (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 3.
-) [3
+) [4
 
 
 
@@ -657,36 +653,28 @@ Chapter 3.
 
  (Anexos/AnexosPAE.tex
 Appendix A.
-) [4
+) [5
 
 
 
 
-] (TdeGPAE.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-[5
+] (TdeGPAE.bbl [6
 
 
 
-] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
+]) [7] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
 Here is how much of TeX's memory you used:
- 5603 strings out of 478582
- 90109 string characters out of 2843872
- 371329 words of memory out of 3000000
- 23638 multiletter control sequences out of 15000+600000
- 498326 words of font info for 85 fonts, out of 8000000 for 9000
+ 5652 strings out of 478582
+ 91288 string characters out of 2843872
+ 376019 words of memory out of 3000000
+ 23682 multiletter control sequences out of 15000+600000
+ 500958 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,65p,733b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb>
-Output written on TdeGPAE.pdf (16 pages, 143488 bytes).
+{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb>
+Output written on TdeGPAE.pdf (18 pages, 186116 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

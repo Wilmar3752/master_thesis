@@ -3,9 +3,12 @@
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }List of figures}{x}{}%
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }List of tables}{xi}{}%
 \contentsline {chapter}{\numberline {1}Introducci\'{o}n}{1}{}%
-\contentsline {chapter}{\numberline {2}Estructura del documento}{2}{}%
-\contentsline {section}{\numberline {2.1}Subt\'{\i }tulos nivel 2}{2}{}%
-\contentsline {subsection}{\numberline {2.1.1}Subt\'{\i }tulos nivel 3}{2}{}%
-\contentsline {chapter}{\numberline {3}Conclusion}{3}{}%
-\contentsline {chapter}{\numberline {A}Appendix}{4}{}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{5}{}%
+\contentsline {section}{\numberline {1.1}Objetivos}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo general}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos específicos}{2}{}%
+\contentsline {chapter}{\numberline {2}Estructura del documento}{3}{}%
+\contentsline {section}{\numberline {2.1}Subt\'{\i }tulos nivel 2}{3}{}%
+\contentsline {subsection}{\numberline {2.1.1}Subt\'{\i }tulos nivel 3}{3}{}%
+\contentsline {chapter}{\numberline {3}Conclusion}{4}{}%
+\contentsline {chapter}{\numberline {A}Appendix}{5}{}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{6}{}%
