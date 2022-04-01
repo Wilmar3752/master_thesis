@@ -1,16 +1,116 @@
-\chapter{Estructura del documento}
-Los cap\'{\i}tulos son las principales divisiones del documento. En estos, se desarrolla el tema del documento. Cada cap\'{\i}tulo debe corresponder a uno de los temas o aspectos tratados en el documento y por tanto debe llevar un t\'{\i}tulo que indique el contenido del cap\'{\i}tulo.
+\chapter{Marco teórico}
+Para el tratamiento de procesos estocásticos y series de tiempo, ha sido mucha la teoría estadística implementada y se ha convertido
+en una herramienta importante para tratar observaciones dependientes y entender la naturaleza de dicha dependencia,
+la mayoría de estos métodos, asumen que las series de timpo son regulamente espaciadas, sin embargo este escenario
+no siempre se da y ahi es donde cobran importancia los procesos estocásticos irregularmente espaciados.
 
-Los t\'{\i}tulos de los cap\'{\i}tulos deben ser concertados entre el alumno y el director del trabajo de grado, teniendo en cuenta los lineamientos que cada unidad acad\'{e}mica brinda.
+Este capitulo tiene la siguiente estructura, en la seccción 2.1 presentamos la definición matematica de un proceso
+estocastico irregularmente espaciado. En la sección 2.2 se presenta un proceso estocástico autorregresivo irregulamente
+espaciado. En la sección 2.3 se presenta un proceso estocástico irregularmente espaciado de medias moviles y en la sección
+2.3 se presenta un proceso estocástico atorregresivo de medias moviles irregulamente espaciado.
 
-\section{Subt\'{\i}tulos nivel 2}
-Toda divisi\'{o}n o cap\'{\i}tulo, a su vez, puede subdividirse en otros niveles y s\'{o}lo se enumera hasta el tercer nivel. Los t\'{\i}tulos de segundo nivel se escriben con min\'{u}scula al margen izquierdo y sin punto final, est\'{a}n separados del texto o contenido por un interlineado posterior de 10 puntos y anterior de 20 puntos (tal y como se presenta en la plantilla).
 
-\subsection{Subt\'{\i}tulos nivel 3}
-De la cuarta subdivisi\'{o}n en adelante, cada nueva divisi\'{o}n o \'{\i}tem puede ser se\~{n}alada con vi\~{n}etas, conservando el mismo estilo de \'{e}sta, a lo largo de todo el documento.
+\section{Procesos estocásticos irregularmente espaciados}
+Sea $(\Omega,\mathscr{B},P)$ un espacio de probabilidad. Si se define un proceso estocástico como una medida 
+que mapea $x: \Omega \mapsto \mathbb{R}^{\mathbb{T}}$, donde 
 
-Las subdivisiones, las vi\~{n}etas y sus textos acompa\~{n}antes deben presentarse sin sangr\'{\i}a y justificados.
+$$x(\omega)= \lbrace X_{\tau}(\omega), \tau \in \mathbb{T}\rbrace$$
 
-\begin{itemize}
-\item En caso que sea necesario utilizar vi\~{n}etas, use este formato (vi\~{n}etas cuadradas).
-\end{itemize} 
+$\mathbb{T}$ es llamado conjunto de índices y la variable aleatoria $X_{\tau}(\omega)$ es llamada coordenada 
+del proceso o trayectoria. Consideremos ahora $\mathbb{T}'= \lbrace t_1,t_2, t_3,... \rbrace$, 
+con $\Delta_{n+1}=t_{n+1}-t_{n}$, para $n\geq 1$
+
+$$x'= \lbrace X_{\tau}(\omega), \tau \in \mathbb{T}'\rbrace$$
+
+$x'$ es un proceso estocástico irregularmente espaciado. Una serie de tiempo irregularmente espaciada es una 
+realización finita de un proceso estocástico irregularmente espaciado. Note que si  $\Delta_{n+1}=t_{n+1}-t_{n}=1$ 
+para $n \geq 1$, el proceso $x'$ es un proceso regularmente espaciado, por tanto esta definición es más general.
+
+\section{Formas de describir un proceso estocástico}
+Una forma de describir un proceso estocástico $x$, es especificar la función de distribución conjunta de 
+$\lbrace X_{\tau_1},X_{\tau_2}, ..., X_{\tau_n}\rbrace$ para todo $n$, este es llamado 
+\emph{punto de vista distribucional}. Por otra parte, se puede describir el proceso proporcionando 
+una formula para el valor $X_{\tau}$ para cada punto $\tau$ en términos de una familia de variables aleatorias 
+con comportamiento probabilístico conocido, esto hace que podamos ver el proceso como una función de otros 
+procesos (o cómo familias de procesos iid); esta forma es llamada \emph{punto de vista construccionista}.
+
+\section{El proceso de medias móviles irregular de primer orden (IMA)}
+Teniendo en cuenta el conjunto $\mathbb{T}'= \lbrace t_1,t_2, t_3,... \rbrace$ propuesto anteriormente, 
+tal que sus diferencias $\Delta_{n+1}$ para $n\geq 1$ están acotados uniformemente lejos de cero. Ahora, 
+sea $m: \mathbb{T}' \mapsto \mathbb{R} $ una función tal que $m(t_n)=0$, para cualquier $t_n \in \mathbb{T}'$. 
+A continuación, sea $\Gamma: \mathbb{T}'x\mathbb{T}' \mapsto \mathbb{R}$ una función tal que para cualquier 
+pareja $t_n,t_s \in \mathbb{T}'$,
+
+\begin{equation*}
+\Gamma (t_n,t_s)=
+    \begin{cases}
+    \gamma_0& |n-s|=0\\
+    \gamma_1,\Delta_{max(n,s)} & |n-s|=1\\
+    0 & |n-s|\geq1\\
+    \end{cases}
+\end{equation*}
+
+Note que $\Gamma$ puede ser representada cómo una matriz diagonal así
+
+\begin{equation}
+    \Gamma=
+	\begin{bmatrix} 
+	\gamma_0 & \gamma_1,\Delta_2 & 0 & 0 & ... \\
+	\gamma_1,\Delta_2 & \gamma_0 & \gamma_1,\Delta_3 & 0\\
+	0 & \gamma_1,\Delta_3 & \gamma_0 & \gamma_1,\Delta_4 \\
+	.& & & & . \\
+	.& & & & & .\\
+	. & & & & & & .
+	\end{bmatrix}
+	\quad
+	\label{mat1}
+\end{equation}
+
+Ser $\Gamma_n$ la truncacion $nxn$ de $\Gamma$ y asumiendo $\gamma_1,\Delta_j\neq 0$, para $j=2,...n$, $\Gamma_n$ 
+es definida positiva si $\gamma_0$ y $(\frac{\gamma_1,\Delta_{n+1}}{\gamma_0})^2 \leq 1/4$, para $j=2,...,n$
+
+Esto implica que existe un proceso Gaussiano estacionario $\lbrace X_{t_n},t_n, \tau \in \mathbb{T}\rbrace$, 
+único hasta la equivalencia, con media 0 y covarianza $\Gamma$. Este proceso es llamado, proceso de medias móviles
+ de primer orden irregularmente espaciado de forma general. A continuación se darán las expresiones particulares 
+ de este proceso desde los dos puntos de vista antes definidos.
+
+\subsubsection{El punto de vista distribucional}
+En (\ref{mat1}), $\gamma_0$ y $\gamma_{1,\Delta_{n+1}}$, para $n\geq1$, representa la varianza y las covarianzas 
+de primer orden respectivamente. Definimos la varianza cómo $\gamma_0=\sigma^2(1+\theta^2)$ y las covarianzas de 
+primer orden cómo $\gamma_{1,\Delta_{n+1}}=\sigma^2 \theta^{\Delta_{n+1}}$, $\sigma^2 >0$ y $0<\theta <1$. 
+Por tanto, obtenemos el proceso estocástico irregularmente espaciado de primer orden con matriz de covarianzas
+
+\begin{equation}
+    \Gamma=
+	\begin{bmatrix} 
+	1+\theta^2 & \theta^{\Delta_2} & 0 & 0 & ... \\
+	\theta^{\Delta_2} & 1+\theta^2 & \theta^{\Delta_3}& 0\\
+	0 & \theta^{\Delta_3} & 1+\theta^2 & \theta^{\Delta_4} \\
+	.& & & & . \\
+	.& & & & & .\\
+	. & & & & & & .
+	\end{bmatrix}
+	\quad
+	\label{mat2}
+\end{equation}
+
+el cual contiene el modelo de medias moviles convencional cómo caso especial. Este es llamado proceso Gaussiano 
+irregular de medias moviles de primer orden.
+
+\subsubsection{El punto de vista construccionista}
+Ahora, cómo es usual, especificaremos el proceso IMA cómo función de otros procesos estocásticos. 
+Sea $\lbrace \epsilon_{t_n}\rbrace n\geq 1$ variables aleatorias independientes que siguen una distribución 
+normal $N(0,\sigma^2 c_n(\theta))$ con $\sigma^2 >0, 0<\theta<1, c_1(\theta)=1+\theta^2$ y
+
+$$
+c_n(\theta)=1+\theta^2-\frac{\theta^{2\Delta_n}}{c_{n-1}(\theta)} para, n\geq 2
+$$
+
+donde $\Delta_n=t_n-t_{n-1}$. El proceso $\lbrace X_{t_n},t_n \in \mathbb{T'} \rbrace$, es decirse tiene un proceso 
+IMA si $X_{t_1}=\epsilon_{t_1}$ y para $n\geq 2 $
+
+\begin{equation}
+    X_{t_n}= \epsilon_{t_n}+\frac{\theta^{\Delta_n}}{c_{n-1}(\theta)}\epsilon_{t_{n-1}}
+\end{equation}
+Decimos que $\lbrace X_{t_n},t_n \in \mathbb{T'} \rbrace$ es un proceso IMA con media 
+$\mu$ si $\lbrace X_{t_n}-\mu,t_n \in \mathbb{T'} \rbrace$ es un proceso IMA

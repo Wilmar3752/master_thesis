@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  29 MAR 2022 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.28)  31 MAR 2022 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,17 +633,20 @@ File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
 
  (Kap2/Cap2.tex
 Chapter 2.
+LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 14.
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyd.fd
+File: ujkpsyd.fd 2006/08/15 v1.0
 ) [3
 
 
 
 
-]
+] [4]) [5] [6]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 3.
-) [4
+) [7
 
 
 
@@ -653,28 +656,28 @@ Chapter 3.
 
  (Anexos/AnexosPAE.tex
 Appendix A.
-) [5
+) [8
 
 
 
 
-] (TdeGPAE.bbl [6
+] (TdeGPAE.bbl [9
 
 
 
-]) [7] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
+]) [10] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
 Here is how much of TeX's memory you used:
- 5652 strings out of 478582
- 91288 string characters out of 2843872
- 376019 words of memory out of 3000000
- 23682 multiletter control sequences out of 15000+600000
- 500958 words of font info for 90 fonts, out of 8000000 for 9000
+ 5675 strings out of 478582
+ 91664 string characters out of 2843872
+ 381039 words of memory out of 3000000
+ 23697 multiletter control sequences out of 15000+600000
+ 503202 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,65p,733b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb>
-Output written on TdeGPAE.pdf (18 pages, 186116 bytes).
+ 60i,9n,65p,733b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmia.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyb.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyd.pfb>
+Output written on TdeGPAE.pdf (21 pages, 244085 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
