@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.7.23)  23 JUL 2022 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.30) (preloaded format=pdflatex 2022.8.6)  6 AUG 2022 18:47
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/JUNIOR/Google Drive/Master_Statistic/Semestre 4/Plantilla_tesis/TdeGPAE.tex"
-(c:/Users/JUNIOR/Google Drive/Master_Statistic/Semestre 4/Plantilla_tesis/TdeGPAE.tex
+**./TdeGPAE.tex
+(TdeGPAE.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-07-04> (EncabezadoPAE.tex (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+L3 programming layer <2022-07-15> (EncabezadoPAE.tex
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
 (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
@@ -17,7 +17,8 @@ Already applied: [0000/00/00] Make \[ robust on input line 62.
 Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
 File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -32,12 +33,14 @@ File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen138
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/06/26 3.77 The Babel package
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/07/20 3.78 The Babel package
 \babel@savecnt=\count194
 \U@D=\dimen139
 \l@unhyphenated=\language79
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count195
 
@@ -45,8 +48,11 @@ Package: babel 2022/06/26 3.77 The Babel package
 * Local config file bblopts.cfg used
 *
 (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.
+ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -54,50 +60,66 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+))
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babe
+l-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen142
 \epsfysize=\dimen143
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen144
-)) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+))
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen145
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count196
@@ -147,9 +169,23 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks29
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -158,20 +194,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip53
-\bibsep=\skip54
+\bibhang=\skip56
+\bibsep=\skip57
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count274
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen153
 \ar@mcellbox=\box53
 \extrarowheight=\dimen154
-\NC@list=\toks24
-\extratabsurround=\skip55
-\backup@length=\skip56
+\NC@list=\toks30
+\extratabsurround=\skip58
+\backup@length=\skip59
 \ar@cellbox=\box54
 )
 \TX@col@width=\dimen155
@@ -180,13 +218,14 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \TX@target=\dimen158
 \TX@delta=\dimen159
 \TX@cols=\count275
-\TX@ftn=\toks25
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+\TX@ftn=\toks31
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip57
-\LTright=\skip58
-\LTpre=\skip59
-\LTpost=\skip60
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
 \LTchunksize=\count276
 \LTcapwidth=\dimen160
 \LT@head=\box55
@@ -198,10 +237,12 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@rows=\count278
 \c@LT@tables=\count279
 \c@LT@chunks=\count280
-\LT@p@ftn=\toks26
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\kpfonts.sty
+\LT@p@ftn=\toks32
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
 )
@@ -489,48 +530,64 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `rm'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/m/n on input line 617.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldrm'
+
 (Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `sf'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/m/n on input line 619.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
+
 (Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 620.
 LaTeX Info: Redefining \not on input line 1580.
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip61
-\RaggedLeftLeftskip=\skip62
-\RaggedRightLeftskip=\skip63
-\CenteringRightskip=\skip64
-\RaggedLeftRightskip=\skip65
-\RaggedRightRightskip=\skip66
-\CenteringParfillskip=\skip67
-\RaggedLeftParfillskip=\skip68
-\RaggedRightParfillskip=\skip69
-\JustifyingParfillskip=\skip70
-\CenteringParindent=\skip71
-\RaggedLeftParindent=\skip72
-\RaggedRightParindent=\skip73
-\JustifyingParindent=\skip74
+\CenteringLeftskip=\skip64
+\RaggedLeftLeftskip=\skip65
+\RaggedRightLeftskip=\skip66
+\CenteringRightskip=\skip67
+\RaggedLeftRightskip=\skip68
+\RaggedRightRightskip=\skip69
+\CenteringParfillskip=\skip70
+\RaggedLeftParfillskip=\skip71
+\RaggedRightParfillskip=\skip72
+\JustifyingParfillskip=\skip73
+\CenteringParindent=\skip74
+\RaggedLeftParindent=\skip75
+\RaggedRightParindent=\skip76
+\JustifyingParindent=\skip77
 ))
-LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 7.
+LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 7
+.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box60
-) (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux))
+) (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux)
+(Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Kap3/Cap3.aux
+
+LaTeX Warning: Label `eq:w' multiply defined.
+
+) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux)
+(Anexos/AnexosPAE.aux))
 \openout1 = `TdeGPAE.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 7.
-LaTeX Font Info:    Trying to load font information for OML+jkp on input line 7.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omljkp.fd
+LaTeX Font Info:    Trying to load font information for OML+jkp on input line 7
+.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 7.
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 7.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omsjkp.fd
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 7
+.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 7.
@@ -541,34 +598,45 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 7.
-LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 7.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omxjkp.fd
+LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 7
+.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 7.
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 7.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpexa.fd
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
+7.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 7.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count286
 \scratchdimen=\dimen161
 \scratchbox=\box61
 \nofMPsegments=\count287
 \nofMParguments=\count288
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count289
 \MPscratchDim=\dimen162
 \MPnumerator=\count290
 \makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks28
-) (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\everyMPtoPDFconversion=\toks34
+)
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \openout2 = `HojaTitulo/HojaTituloPAE.aux'.
@@ -577,30 +645,40 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <HojaTitulo/Fig_HojaTitulo/Univalle.jpg, id=1, 563.10374pt x 799.48688pt>
 File: HojaTitulo/Fig_HojaTitulo/Univalle.jpg Graphic file (type jpg)
 <use HojaTitulo/Fig_HojaTitulo/Univalle.jpg>
-Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/Univalle.jpg  used on input line 7.
+Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/Univalle.jpg  used on input 
+line 7.
 (pdftex.def)             Requested size: 84.46191pt x 119.91785pt.
  [1
 
 
-{C:/Users/JUNIOR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./HojaTitulo/Fig_HojaTitulo/Univalle.jpg>] [2
+{C:/Users/JUNIOR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./HojaTitul
+o/Fig_HojaTitulo/Univalle.jpg>] [2
 
-] [3]
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 78.
+]
+[3]
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
+78.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
+78.
  (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 78.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpmia.fd
+LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
+78.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 78.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
+78.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
-) [4] [5
+)
+[4] [5
 
 ] [6
 
@@ -624,7 +702,8 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 \tf@lot=\write5
 \openout5 = `TdeGPAE.lot'.
 
- [11
+
+[11
 
 ]
 \openout2 = `Introduccion/IntroduccionPAE.aux'.
@@ -638,28 +717,76 @@ Underfull \vbox (badness 1552) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 78.
- (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 7
+8.
+
+(C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)) [2]
+))
+[2]
 \openout2 = `Kap2/Cap2.aux'.
 
  (Kap2/Cap2.tex
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 14.
+LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 
+14.
 (C:\Users\JUNIOR\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyd.fd
 File: ujkpsyd.fd 2006/08/15 v1.0
-) [3
+)
+[3
 
 
 
 
 ] [4] [5]) [6]
+\openout2 = `Kap3/Cap3.aux'.
+
+ (Kap3/Cap3.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+[7
+
+
+
+
+]
+Overfull \hbox (3.44656pt too wide) in paragraph at lines 31--32
+[]$\OML/jkp/m/it/12 Cov\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; X[]\OT1/jkp/m/n/1
+2 ) = \OML/jkp/m/it/12 Cov\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; ^^^[]X[] \OT1/
+jkp/m/n/12 + \OML/jkp/m/it/12 W[]\OT1/jkp/m/n/12 ) = \OML/jkp/m/it/12 ^^^[]Cov\
+OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; X[]\OT1/jkp/m/n/12 ) = \OML/jkp/m/it/12 ^
+^^[]^^^[]Var\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]\OT1/jkp/m/n/12 )$ 
+ []
+
+
+Overfull \hbox (28.03056pt too wide) in paragraph at lines 35--36
+[]$\OML/jkp/m/it/12 Cov\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; X[]\OT1/jkp/m/n/1
+2 ) = \OML/jkp/m/it/12 Cov\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; ^^^[]X[] \OT1/
+jkp/m/n/12 + \OML/jkp/m/it/12 W[]\OT1/jkp/m/n/12 ) = \OML/jkp/m/it/12 ^^^[]Cov\
+OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]; X[]\OT1/jkp/m/n/12 ) = \OML/jkp/m/it/12 ^
+^^[]^^^[]^^^[]Var\OT1/jkp/m/n/12 (\OML/jkp/m/it/12 X[]\OT1/jkp/m/n/12 )$ 
+ []
+
+[8]) [9]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
-Chapter 3.
-) [7
+Chapter 4.
+) [10
 
 
 
@@ -669,28 +796,50 @@ Chapter 3.
 
  (Anexos/AnexosPAE.tex
 Appendix A.
-) [8
+) [11
 
 
 
 
-] (TdeGPAE.bbl [9
+] (TdeGPAE.bbl [12
 
 
 
-]) [10] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux) (Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (Anexos/AnexosPAE.aux)) ) 
+]) [13] (TdeGPAE.aux (HojaTitulo/HojaTituloPAE.aux)
+(Introduccion/IntroduccionPAE.aux) (Kap2/Cap2.aux) (Kap3/Cap3.aux)
+(Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux)
+(Anexos/AnexosPAE.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5772 strings out of 478338
- 93967 string characters out of 2836228
- 391520 words of memory out of 3000000
- 24033 multiletter control sequences out of 15000+600000
+ 5889 strings out of 478337
+ 96196 string characters out of 2836195
+ 393103 words of memory out of 3000000
+ 24140 multiletter control sequences out of 15000+600000
  503202 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,65p,733b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmia.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyb.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on TdeGPAE.pdf (21 pages, 244209 bytes).
+ 60i,9n,65p,660b,266s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfont
+s-expert.enc}{C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/bas
+e/8r.enc}<C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfo
+nts/jkpbn8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/kpfonts/jkpex.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/kpfonts/jkpmi.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/kpfonts/jkpmia.pfb><C:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/JUNIOR/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/JUNIOR/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/JUNIOR/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/JUNI
+OR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyb.pfb><C:/User
+s/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C
+:/Users/JUNIOR/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyd.
+pfb>
+Output written on TdeGPAE.pdf (24 pages, 254079 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
