@@ -1,0 +1,23 @@
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{vii}{}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of figures}{x}{}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of tables}{xi}{}%
+\contentsline {chapter}{\numberline {1}Introducci\'{o}n}{1}{}%
+\contentsline {section}{\numberline {1.1}Objetivos}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo general}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos específicos}{2}{}%
+\contentsline {chapter}{\numberline {2}Marco teórico}{3}{}%
+\contentsline {section}{\numberline {2.1}Procesos estocásticos irregularmente espaciados}{3}{}%
+\contentsline {section}{\numberline {2.2}Formas de describir un proceso estocástico}{4}{}%
+\contentsline {section}{\numberline {2.3}El proceso de medias móviles irregular de primer orden (IMA)}{4}{}%
+\contentsline {subsubsection}{El punto de vista distribucional}{5}{}%
+\contentsline {subsubsection}{El punto de vista construccionista}{5}{}%
+\contentsline {section}{\numberline {2.4}El proceso Autorregresivo de primer orden irregular (IAR)}{6}{}%
+\contentsline {subsection}{\numberline {2.4.1}Estimación}{7}{}%
+\contentsline {chapter}{\numberline {3}Metodología}{9}{}%
+\contentsline {section}{\numberline {3.1}Construyendo el modelo autorregresivo irregular}{9}{}%
+\contentsline {section}{\numberline {3.2}Implementando propuesta}{10}{}%
+\contentsline {section}{\numberline {3.3}Estudio de simulación}{11}{}%
+\contentsline {chapter}{\numberline {4}Conclusion}{14}{}%
+\contentsline {chapter}{\numberline {A}Appendix}{15}{}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{16}{}%
