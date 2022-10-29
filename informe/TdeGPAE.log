@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.21)  18 SEP 2022 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.21)  29 OCT 2022 10:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/user/Desktop/tesis/master_thesis/TdeGPAE.tex
-(/Users/user/Desktop/tesis/master_thesis/TdeGPAE.tex
+**/Users/user/Desktop/master_thesis/informe/TdeGPAE.tex
+(/Users/user/Desktop/master_thesis/informe/TdeGPAE.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./EncabezadoPAE.tex (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -727,10 +727,10 @@ Overfull \hbox (28.03056pt too wide) in paragraph at lines 35--36
 
 [10]
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim1.eps>
-(epstopdf)                    date: 2022-08-29 21:34:19
+(epstopdf)                    date: 2022-10-29 10:20:36
 (epstopdf)                    size: 39895 bytes
 (epstopdf)             Output file: <Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-08-29 21:37:20
+(epstopdf)                    date: 2022-10-29 10:20:36
 (epstopdf)                    size: 20426 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Kap3/Fig_Cap3/sim1.eps>
 (epstopdf)             \includegraphics on input line 97.
@@ -745,10 +745,10 @@ Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim2.eps>
-(epstopdf)                    date: 2022-08-29 21:35:46
+(epstopdf)                    date: 2022-10-29 10:20:36
 (epstopdf)                    size: 40020 bytes
 (epstopdf)             Output file: <Kap3/Fig_Cap3/sim2-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-08-29 21:37:20
+(epstopdf)                    date: 2022-10-29 10:20:36
 (epstopdf)                    size: 20373 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim2-eps-converted-to.pdf Kap3/Fig_Cap3/sim2.eps>
 (epstopdf)             \includegraphics on input line 104.
@@ -792,12 +792,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  5806 strings out of 478268
- 90853 string characters out of 5846347
+ 90859 string characters out of 5846347
  385145 words of memory out of 5000000
  23844 multiletter control sequences out of 15000+600000
  503202 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,10n,65p,698b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,10n,65p,700b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpsyb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
 Output written on TdeGPAE.pdf (28 pages, 286757 bytes).
 PDF statistics:

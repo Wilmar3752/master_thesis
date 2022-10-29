@@ -1,8 +1,8 @@
-PWD /Users/user/Desktop/tesis/master_thesis
+PWD /Users/user/Desktop/master_thesis/informe
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/user/Desktop/tesis/master_thesis/TdeGPAE.tex
+INPUT /Users/user/Desktop/master_thesis/informe/TdeGPAE.tex
 OUTPUT TdeGPAE.log
 INPUT ./EncabezadoPAE.tex
 INPUT ./EncabezadoPAE.tex
