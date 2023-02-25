@@ -1,20 +1,7 @@
-#t_n = c(1,2,4,6,7,8,11,15)
+#t_n <- c(1,2,4,6,7,8,11,15)
+source("utils.R")
 
-
-iar.sim = function(n_sim, phi = 0.7, sigma =1){
-  w <- rnorm(n_sim)
-  x <- rep(0,n_sim)
-  delta_n = 1 + rpois(n_sim-1,2)
-  t_n =diffinv(delta_n, xi=1)
-  for(t in 2:n_sim){
-    x[t] <- sign(phi)*abs(phi)^(delta_n[t-1])*x[t-1] + sqrt((sigma^2)/(1-phi^2)*(1-(sign(phi)^2)*abs(phi)^(2*delta_n[t-1])))*w[t]
-  }
-  return(data.frame(cbind(x, t_n)))
-}
-
-
-
-
+getwd()
 
 
 phi <- c(-0.1, -0.5, -0.9)
@@ -22,26 +9,22 @@ phi <- c(-0.1, -0.5, -0.9)
 n_sims <- c(20, 50, 100)
 
 
-make_plot = function(){
-  par(mfrow = c(3,3))
-  for(n in n_sims){
-    for(p in phi){
-      res_sim = iar.sim(n_sim = n, phi = p, sigma = 1)
+make_plot <- function() {
+  par(mfrow = c(3, 3))
+  for (n in n_sims){
+    for (p in phi){
+      res_sim <- iar_sim(n_sim = n, phi = p, sigma = 1) # nolint
       p2 <- as.character(p)
       n2 <- as.character(n)
-      plot(res_sim[,2],res_sim[,1], pch=20, type = 'line',xaxt='n', 
-           main = bquote(paste(n == .(n2),', ', phi == .(p2))),
+      plot(res_sim[, 2], res_sim[, 1], pch = 20, type = "line", xaxt = "n",
+           main = bquote(paste(n == .(n2), ", ", phi == .(p2))),
            xlab = expression(t[n]), ylab = expression(X[t[n]]))
-      axis(3,at=res_sim[,2],col='red', labels = FALSE)
-      axis(1,at=seq(0,(max(res_sim[,2])+50),50),col='black')
+      axis(3, at = res_sim[, 2], col = "red", labels = FALSE)
+      axis(1, at = seq(0, (max(res_sim[, 2]) + 50), 50), col = "black")
     }
-  } 
-  
+  }
 }
-
-a = make_plot()
-
-postscript("./../master_thesis/Kap3/Fig_Cap3/sim2.eps")
+postscript("./../informe/Kap3/Fig_Cap3/sim2.eps")
 make_plot()
 dev.off()
 
