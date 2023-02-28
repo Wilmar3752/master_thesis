@@ -8,7 +8,7 @@ iar_sim <- function(n_sim, phi = 0.7, sigma = 1) {
   w_n <- calc_w(delta_n, phi, sigma)
   for (t in 1:n_sim){
     if (t == 1) {
-      x[t] <- sqrt(w[t]) * e[t]
+      x[t] <- sqrt(w_n[t]) * e[t]
     } else {
       x[t] <- phi_n[t - 1] * x[t - 1] +
       sqrt(w_n[t]) * e[t]
@@ -52,3 +52,19 @@ iar_loglik <- function(x, par) {
   return(ll)
 }
 
+calc_innovations <- function(x, x_hat, w_n) {
+e <- (x$x - x_hat) / sqrt(w_n)
+innovation <- e - mean(e)
+return(innovation)
+}
+
+calc_new_x <- function(innovations, w_n, phi_n) {
+  x_new <- c()
+  n <- length(innovations)
+  x_new[1] <- innovations[1] * sqrt(w_n[1])
+  print(x_new)
+  for (i in 2:n) {
+      x_new[i] <- phi_n[i - 1] * x_new[i - 1] + sqrt(w_n[i]) * innovations[i]
+  }
+  return(x_new)
+}
