@@ -62,9 +62,43 @@ calc_new_x <- function(innovations, w_n, phi_n) {
   x_new <- c()
   n <- length(innovations)
   x_new[1] <- innovations[1] * sqrt(w_n[1])
-  print(x_new)
   for (i in 2:n) {
       x_new[i] <- phi_n[i - 1] * x_new[i - 1] + sqrt(w_n[i]) * innovations[i]
   }
   return(x_new)
+}
+
+iar_mle <- function(par, fn, data, hessian) {
+    p <- optim(par = par, fn = fn, x = data, hessian = hessian)
+    par <- p$par
+    stde <- sqrt(diag(solve(p$hessian)))
+    mle_list <- list("par" = par, "stde" = stde)
+    return(mle_list)
+}
+
+iar_boot_est <- function(x, num_bootstrap_trayetories) {
+  delta_n <- diff(x$t_n)
+  mle <- iar_mle(par = c(-0.99, 0.99),
+                fn = iar_loglik,
+                data = sim,
+                hessian = TRUE)
+  par <- mle$par
+  w_n <- calc_w(delta_n, par[1], par[2])
+  x_hat <- calc_xhat(sim, par[1])
+  innovations <- calc_innovations(sim, x_hat = x_hat, w_n = w_n)
+  phi_n <- calc_phi_n(par[1], delta_n)
+  phi_boost <- 0
+  sigma_boost <- 0
+
+  for (i in 1:num_bootstrap_trayetories) {
+      innovation_sample <- 0
+      innovation_sample <- sample(innovations, replace = TRUE)
+      new_x <- calc_new_x(innovation_sample, w_n, phi_n)
+      sim$x <- new_x
+      p <- iar_mle(par = c(0.5, 1), fn = iar_loglik, data = sim, hessian = TRUE)
+      par <- p$par
+      phi_boost[i] <- par[1]
+      sigma_boost[i] <- par[2]
+}
+return(phi_boost)
 }
