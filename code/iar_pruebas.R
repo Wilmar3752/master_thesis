@@ -1,6 +1,6 @@
 source("utils.R")
 
-phi <- 0.1
+phi <- c(-0.1, -0.5, -0.9, 0.1, 0.5, 0.9)
 sigma <- 1
 n_sim <- 1000
 #sim <- read.csv("val_data.csv")
