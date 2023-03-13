@@ -43,15 +43,10 @@ library(ggplot2)
 library(tidyverse)
 install.packages("dplyr")
 
-
-#pdf("myplot.pdf")
-#p <- 
 ggplot(df_final, aes(x = bte_phi, group = n)) +
 geom_density(aes(col = n)) +
 scale_color_manual(values = c("red", "blue", "black")) +
 facet_wrap(~phi, scales = "free")
-#print(p)
-#dev.off()
 
 ggplot(df_final, aes(x = bte_phi, group = n)) +
 geom_density(aes(col = n)) +
@@ -60,26 +55,29 @@ facet_wrap(~phi)
 
 library(dplyr)
 
-t <- df_final %>% group_by(n, phi) %>% 
+t <- df_final %>%
+    group_by(n, phi) %>%
     summarise(
         mle = mean(mle_phi),
         se_mle = mean(mle_se),
         bias = mean(phi - mle_phi),
-         .groups = 'drop'
+         .groups = "drop"
     )
-write.excel <- function(x,row.names=FALSE,col.names=TRUE,...) {
-    con <- pipe("xclip -selection clipboard -i", open="w")
-    write.table(x,con,sep="\t",row.names=row.names,col.names=col.names,...)
+
+write_excel <- function(x, row_names = FALSE, col_names = TRUE, ...) {
+    con <- pipe("xclip -selection clipboard -i", open = "w")
+    write.table(x, con, sep = "\t", row.names = row_names,
+    col.names = col_names, ...)
     close(con)
 }
 write.excel(t)
 
-t2 <- df_final %>% group_by(n, phi) %>%
-    summarise(
+t2 <- df_final %>%
+      group_by(n, phi) %>%
+      summarise(
         bte = mean(bte_phi),
         se_bte = mean(bte_se),
         bias = mean(phi - bte_phi),
-         .groups = 'drop'
+         .groups = "drop"
     )
 write.excel(t2)
-

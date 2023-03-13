@@ -531,6 +531,15 @@ INPUT ./Kap3/Cap3.tex
 INPUT Kap3/Cap3.tex
 INPUT ./Kap3/Cap3.tex
 INPUT Kap3/Cap3.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmi.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpsy.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpex.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpsya.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpsyb.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmia.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpsyc.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpsyd.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpexa.tfm
 INPUT ./Kap3/Fig_Cap3/sim1.eps
 INPUT ./Kap3/Fig_Cap3/sim1.eps
 INPUT Kap3/Fig_Cap3/sim1.eps

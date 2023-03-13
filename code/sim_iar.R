@@ -33,10 +33,7 @@ dev.off()
 
 ## x es un input con el valor de la serie y el tiempo en que fue medida
 
-
-
-
-calc.xhat <- function(x,phi){
+calc.xhat <- function(x,phi) {
   n=nrow(x)
   x_hat = c()
   delta_n = diff(x$t_n)
