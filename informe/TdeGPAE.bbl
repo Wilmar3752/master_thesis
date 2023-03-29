@@ -5,6 +5,11 @@ Adorf, H.-M.  \harvardyearleft 1995\harvardyearright , Interpolation of
   irregularly sampled data series---a survey, {\em in} `Astronomical Data
   Analysis Software and Systems IV', Vol.~77, p.~460.
 
+\harvarditem{Bose}{1990}{bose1990bootstrap}
+Bose, A.  \harvardyearleft 1990\harvardyearright , `Bootstrap in moving average
+  models', {\em Annals of the Institute of Statistical Mathematics} {\bf
+  42}(4),~753--768.
+
 \harvarditem[Dilmaghani et~al.]{Dilmaghani, Henry, Soonthornnonda, Christensen
   \harvardand\ Henry}{2007}{dilmaghani2007harmonic}
 Dilmaghani, S., Henry, I.~C., Soonthornnonda, P., Christensen, E.~R.
@@ -69,6 +74,12 @@ Shamsan, A., Wu, X., Liu, P. \harvardand\ Cheng, C.  \harvardyearleft
   2020\harvardyearright , `Intrinsic recurrence quantification analysis of
   nonlinear and nonstationary short-term time series', {\em Chaos: An
   Interdisciplinary Journal of Nonlinear Science} {\bf 30}(9),~093104.
+
+\harvarditem[Shumway et~al.]{Shumway, Stoffer \harvardand\
+  Stoffer}{2017}{shumway2017time}
+Shumway, R.~H., Stoffer, D.~S. \harvardand\ Stoffer, D.~S.  \harvardyearleft
+  2017\harvardyearright , {\em Time series analysis and its applications with R
+  examples}, Vol.~4, Springer Texts in Statistics.
 
 \harvarditem[Yang et~al.]{Yang, Fowler, Jackson \harvardand\
   Donohue}{2019}{yang2019predictability}

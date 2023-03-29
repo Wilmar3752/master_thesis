@@ -457,10 +457,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmn7t.tfm
 INPUT ./TdeGPAE.toc
 INPUT TdeGPAE.toc
 INPUT TdeGPAE.toc
-OUTPUT TdeGPAE.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkpbn7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpbne.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpbn8r.tfm
+OUTPUT TdeGPAE.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkpmsl7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmsle.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmsl8r.tfm
 INPUT ./TdeGPAE.lof
 INPUT TdeGPAE.lof
 INPUT TdeGPAE.lof
@@ -487,9 +490,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmn7c.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkpmsl7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmsle.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmsl8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/kpfonts/jkpmit7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmite.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/kpfonts/jkpmit8r.tfm
@@ -562,6 +562,11 @@ INPUT ./Kap3/Fig_Cap3/sim22.eps
 INPUT ./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf
 INPUT ./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf
 INPUT ./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf
+INPUT ./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf
+INPUT ./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf
+INPUT Kap3/Fig_Cap3/4RzQZ8xYXY.pdf
+INPUT ./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf
+INPUT ./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf
 INPUT ./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 INPUT ./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 INPUT ./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex

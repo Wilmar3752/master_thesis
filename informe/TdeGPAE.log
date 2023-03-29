@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  13 MAR 2023 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  28 MAR 2023 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,25 +601,25 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 
 ] [7] [8
 
-]) (./TdeGPAE.toc)
+]) (./TdeGPAE.toc [9
+
+
+
+])
 \tf@toc=\write3
 \openout3 = `TdeGPAE.toc'.
 
- [9
-
-
-
-] (./TdeGPAE.lof)
+ [10] (./TdeGPAE.lof)
 \tf@lof=\write4
 \openout4 = `TdeGPAE.lof'.
 
- [10
+ [11
 
 ] (./TdeGPAE.lot)
 \tf@lot=\write5
 \openout5 = `TdeGPAE.lot'.
 
- [11
+ [12
 
 ]
 \openout2 = `Introduccion/IntroduccionPAE.aux'.
@@ -714,51 +714,83 @@ Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 10 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[10]
+[10] [11]
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 12 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[12]
+Overfull \hbox (6.96085pt too wide) in paragraph at lines 171--175
+\OT1/jkp/m/n/12 para $\OML/jkp/m/it/12 n \OT1/jkp/m/n/12 = 2\OML/jkp/m/it/12 ; [] ; \OT1/jkp/m/n/12 N$. El lla-mado re-muestreo basado en el mod-elo podr[]^^Pa pro-ceder por muestreo
+ []
+
+
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 171--175
+\OT1/jkp/m/n/12 equiprob-a-ble con reem-plazo de los resid-uos cen-tra-dos $\OML/jkp/m/it/12 e[] \OMS/jkp/m/n/12 ^^@ []\OML/jkp/m/it/12 ; [] ; e[] \OMS/jkp/m/n/12 ^^@ []$\OT1/jkp/m/n/12 , donde $[] = [][] \OML/jkp/m/it/12 e[]=\OT1/jkp/m/n/12 N \OMS/jkp/m/n/12 ^^@
+ []
+
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim1.eps>
-(epstopdf)                    date: 2023-02-25 09:33:22
+(epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 39895 bytes
 (epstopdf)             Output file: <Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-02-25 09:33:22
+(epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 20426 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Kap3/Fig_Cap3/sim1.eps>
-(epstopdf)             \includegraphics on input line 121.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=81, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=90, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 121.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 195.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
- [11]
+[13]
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim22.eps>
-(epstopdf)                    date: 2023-02-25 12:50:33
+(epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 40026 bytes
 (epstopdf)             Output file: <Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-02-25 12:52:27
+(epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 19911 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Kap3/Fig_Cap3/sim22.eps>
-(epstopdf)             \includegraphics on input line 128.
+(epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=85, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=95, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 128.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 201.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
+
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 12 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+\OT1/jkp/m/n/12 14 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[12 <./Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>] [13 <./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>]
+[14 <./Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>] [15 <./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig:monte_carlo' on page 16 undefined on input line 234.
+
+<Kap3/Fig_Cap3/4RzQZ8xYXY.pdf, id=125, 887.315pt x 578.16pt>
+File: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf  used on input line 237.
+(pdftex.def)             Requested size: 422.52054pt x 248.20294pt.
+
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 16 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[16 <./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>]
+
+LaTeX Warning: Reference `fig:monte_carlo' on page 17 undefined on input line 244.
+
+) [17]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 4.
-) [14
+) [18
 
 
 
@@ -768,29 +800,33 @@ Chapter 4.
 
  (./Anexos/AnexosPAE.tex
 Appendix A.
-) [15
+) [19
 
 
 
 
-] (./TdeGPAE.bbl [16
+] (./TdeGPAE.bbl [20
 
 
 
-]) [17] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux)) ) 
+]) [21] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5823 strings out of 478287
- 90659 string characters out of 5849289
- 384897 words of memory out of 5000000
- 23849 multiletter control sequences out of 15000+600000
+ 5840 strings out of 478287
+ 91109 string characters out of 5849289
+ 388017 words of memory out of 5000000
+ 23865 multiletter control sequences out of 15000+600000
  506014 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,10n,65p,710b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,65p,906b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on TdeGPAE.pdf (28 pages, 287378 bytes).
+Output written on TdeGPAE.pdf (33 pages, 382254 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 204 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
 
