@@ -231,19 +231,40 @@ donde $\widehat{\operatorname{bias}}_{\hat{\phi} \mathrm{MLE}}=\hat{\phi}^{\math
 $$
 \widetilde{\mathrm{se}}^2\left(\hat{\phi}^{\mathrm{MLE}}\right)=\frac{1}{\mathrm{M}-1} \sum_{m=1}^{\mathrm{M}}\left(\hat{\phi}_m^{\mathrm{MLE}}-\hat{\phi}^{\mathrm{MLE}}\right)^2
 $$
-De la misma manera, definimos $\widehat{\mathrm{RMSE}}_{\hat{\phi}^{\mathrm{b}}}, \widehat{\mathrm{CV}}_{\hat{\phi}^{\mathrm{b}}}, \widehat{\operatorname{bias}}_{\hat{\phi}^{\mathrm{b}}}$ y $\widetilde{\operatorname{se}}^2\left(\hat{\phi}^{\mathrm{b}}\right)$ para el caso Bootstrap. La figura \ref{fig:monte_carlo} muestra flujo de trabajo de este estudio de simulación
+De la misma manera, definimos $\widehat{\mathrm{RMSE}}_{\hat{\phi}^{\mathrm{b}}}, \widehat{\mathrm{CV}}_{\hat{\phi}^{\mathrm{b}}}, \widehat{\operatorname{bias}}_{\hat{\phi}^{\mathrm{b}}}$ y $\widetilde{\operatorname{se}}^2\left(\hat{\phi}^{\mathrm{b}}\right)$ para el caso Bootstrap. La figura \ref{fig:monte_carlo1} muestra flujo de trabajo de este estudio de simulación
 
 \begin{figure}[h]
     \includegraphics[trim={0 2cm 0 0},clip,width=0.9\textwidth]{Kap3/Fig_Cap3/4RzQZ8xYXY.pdf}
-    \caption{Esquema general del estudio de Monte Carlo. Aquí, mostramos como se obtienen los pares }
+    \caption{Esquema general del estudio de Monte Carlo.}
     \label{fig:monte_carlo1}
 \end{figure}
 
 En este estudio, se evaluaron los resultados del modelo en el caso de tiempo irregularmente espaciado, aunque también se comprobó que el modelo es válido para tiempos regulares con $\Delta_n=1$ para todos los valores de $n$.
 
-Para analizar el comportamiento de los estimadores de máxima verosimilitud y bootstrap, se realizaron simulaciones de distribuciones de muestras finitas. Los resultados de estas simulaciones se muestran en la figura \ref{fig:monte_carlo}. Se puede observar que ambos estimadores presentan un comportamiento satisfactorio, parecen ser insesgados y consistentes en sus resultados.
+Para analizar el comportamiento de los estimadores de máxima verosimilitud y bootstrap, 
+se realizaron simulaciones de distribuciones de muestras finitas.
+Los resultados de estas simulaciones se muestran en las figuras \ref{fig:monte_carlo_res1} y \ref{fig:monte_carlo_res2}. 
+Se puede observar que ambos estimadores presentan un comportamiento satisfactorio, parecen ser insesgados y consistentes en sus resultados.
 
-Se puede notar que para valores pequeños de $n$ y para valores cercanos a cero de $\phi$, los estimadores tienden a tener una mayor variabilidad. Este hallazgo es importante para el análisis de los resultados, ya que sugiere que la precisión de los estimadores puede verse afectada por factores como la cantidad de datos disponibles y la magnitud del parámetro de interés.
+\begin{figure}[h]
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/sim3.eps}
+    \caption{Esquema general del estudio de Monte Carlo.}
+    \label{fig:monte_carlo_res1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4.eps}
+    \caption{Esquema general del estudio de Monte Carlo.}
+    \label{fig:monte_carlo_res2}
+    \end{minipage}
+\end{figure}
+
+Note que para valores pequeños de $n$ y para valores cercanos a cero de $\phi$, 
+los estimadores tienden a tener una mayor variabilidad.
+Este hallazgo es importante para el análisis de los resultados, 
+ya que sugiere que la precisión de los estimadores puede verse afectada por factores como la cantidad de datos 
+disponibles y la magnitud del parámetro de interés.
 
 % \begin{figure}[h]
 %     \centering
@@ -262,3 +283,6 @@ Se puede notar que para valores pequeños de $n$ y para valores cercanos a cero 
 
 En segundo lugar, para ambos estimadores, presentamos las medidas de rendimiento. Por separado, estimamos el error de Monte Carlo (MCE) por teoría asintótica cada simulación (véase, Koehler et al., 2009), y luego presentamos el valor máximo.
  askjdikas
+
+
+ 
