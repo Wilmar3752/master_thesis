@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  28 MAR 2023 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  28 MAR 2023 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -191,16 +191,43 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@tables=\count279
 \c@LT@chunks=\count280
 \LT@p@ftn=\toks32
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count281
+\multirow@dima=\skip65
+\bigstrutjot=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks33
+\minrowclearance=\skip66
+)
+\rownum=\count282
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
  (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
 )
-\c@mv@rm=\count281
-\c@mv@boldrm=\count282
-\c@mv@sf=\count283
-\c@mv@boldsf=\count284
+\c@mv@rm=\count283
+\c@mv@boldrm=\count284
+\c@mv@sf=\count285
+\c@mv@boldsf=\count286
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 354.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 354.
@@ -489,30 +516,30 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
 LaTeX Info: Redefining \not on input line 1580.
 ) (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip64
-\RaggedLeftLeftskip=\skip65
-\RaggedRightLeftskip=\skip66
-\CenteringRightskip=\skip67
-\RaggedLeftRightskip=\skip68
-\RaggedRightRightskip=\skip69
-\CenteringParfillskip=\skip70
-\RaggedLeftParfillskip=\skip71
-\RaggedRightParfillskip=\skip72
-\JustifyingParfillskip=\skip73
-\CenteringParindent=\skip74
-\RaggedLeftParindent=\skip75
-\RaggedRightParindent=\skip76
-\JustifyingParindent=\skip77
+\CenteringLeftskip=\skip67
+\RaggedLeftLeftskip=\skip68
+\RaggedRightLeftskip=\skip69
+\CenteringRightskip=\skip70
+\RaggedLeftRightskip=\skip71
+\RaggedRightRightskip=\skip72
+\CenteringParfillskip=\skip73
+\RaggedLeftParfillskip=\skip74
+\RaggedRightParfillskip=\skip75
+\JustifyingParfillskip=\skip76
+\CenteringParindent=\skip77
+\RaggedLeftParindent=\skip78
+\RaggedRightParindent=\skip79
+\JustifyingParindent=\skip80
 )
-\c@theorem=\count285
-\c@definition=\count286
+\c@theorem=\count287
+\c@definition=\count288
 )
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count287
+\l__color_backend_stack_int=\count289
 \l__pdf_internal_box=\box59
 ) (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
 \openout1 = `TdeGPAE.aux'.
@@ -549,17 +576,17 @@ File: ujkpexa.fd 2006/08/15 v1.0
 LaTeX Font Info:    ... okay on input line 7.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen161
+\scratchcounter=\count290
+\scratchdimen=\dimen162
 \scratchbox=\box60
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen162
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks34
+\nofMPsegments=\count291
+\nofMParguments=\count292
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen163
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -817,12 +844,25 @@ Overfull \hbox (32.42358pt too wide) in paragraph at lines 257--258
 [][] 
  []
 
+
+Overfull \hbox (42.6947pt too wide) in paragraph at lines 274--302
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) [17 <./Kap3/Fig_Cap3/sim3-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>]
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 18 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[18]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 4.
-) [18
+) [19
 
 
 
@@ -832,29 +872,29 @@ Chapter 4.
 
  (./Anexos/AnexosPAE.tex
 Appendix A.
-) [19
+) [20
 
 
 
 
-] (./TdeGPAE.bbl [20
+] (./TdeGPAE.bbl [21
 
 
 
-]) [21] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux)) ) 
+]) [22] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux)) ) 
 Here is how much of TeX's memory you used:
- 5855 strings out of 478287
- 91662 string characters out of 5849289
- 388045 words of memory out of 5000000
- 23878 multiletter control sequences out of 15000+600000
+ 6476 strings out of 478287
+ 99952 string characters out of 5849289
+ 428730 words of memory out of 5000000
+ 24484 multiletter control sequences out of 15000+600000
  506014 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,65p,906b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,65p,1026b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on TdeGPAE.pdf (33 pages, 469036 bytes).
+Output written on TdeGPAE.pdf (34 pages, 473473 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 231 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

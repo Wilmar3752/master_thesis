@@ -24,6 +24,6 @@
 \contentsline {section}{\numberline {3.6}Estimación por máxima verosimilitud}{12}{}%
 \contentsline {section}{\numberline {3.7}Estimación Bootstrap}{13}{}%
 \contentsline {section}{\numberline {3.8}Estudio de Simulación Monte Carlo}{14}{}%
-\contentsline {chapter}{\numberline {4}Conclusion}{18}{}%
-\contentsline {chapter}{\numberline {A}Appendix}{19}{}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{20}{}%
+\contentsline {chapter}{\numberline {4}Conclusion}{19}{}%
+\contentsline {chapter}{\numberline {A}Appendix}{20}{}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{21}{}%
