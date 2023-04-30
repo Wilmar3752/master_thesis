@@ -10,45 +10,45 @@ A level-1 auxiliary file: Anexos/AnexosPAE.aux
 The style file: agsm.bst
 Database file #1: BiblioPAE.bib
 Warning--can't use both volume and number fields in novoseltseva2019spatial
-You've used 14 entries,
+You've used 13 entries,
             2909 wiz_defined-function locations,
-            743 strings with 7964 characters,
-and the built_in function-call counts, 71248 in all, are:
-= -- 11652
-> -- 985
-< -- 3
-+ -- 5648
-- -- 301
-* -- 6292
-:= -- 14084
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 195
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 243
-empty$ -- 489
-format.name$ -- 346
-if$ -- 12818
+            737 strings with 7802 characters,
+and the built_in function-call counts, 66291 in all, are:
+= -- 10843
+> -- 915
+< -- 2
++ -- 5259
+- -- 280
+* -- 5850
+:= -- 13105
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 181
+chr.to.int$ -- 13
+cite$ -- 14
+duplicate$ -- 227
+empty$ -- 453
+format.name$ -- 322
+if$ -- 11926
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 45
-num.names$ -- 149
-pop$ -- 48
+missing$ -- 14
+newline$ -- 42
+num.names$ -- 138
+pop$ -- 46
 preamble$ -- 1
-purify$ -- 210
+purify$ -- 195
 quote$ -- 0
-skip$ -- 212
+skip$ -- 197
 stack$ -- 0
-substring$ -- 16631
-swap$ -- 57
-text.length$ -- 199
+substring$ -- 15478
+swap$ -- 53
+text.length$ -- 184
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 50
 warning$ -- 1
-while$ -- 314
+while$ -- 291
 width$ -- 0
-write$ -- 194
+write$ -- 180
 (There was 1 warning)

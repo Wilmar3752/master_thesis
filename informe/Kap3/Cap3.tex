@@ -137,30 +137,71 @@ donde $\phi_{n} = sign(\phi)|\phi|^{\Delta_{n}}$ y $\gamma_0=\frac{\sigma^2}{1-\
 el proceso IAR es, por definicion un proceso Gaussiano debilmente estacionario y por tanto estrictamente estacionario.
 Además, note que cuando $\Delta_n=1$, para $n \geq 2$, obtenemos el proceso AR convencional.
 
-\section{Predicción}
+\section{Pronóstico en el modelo IAR}
 
-\section{Estimación por máxima verosimilitud}
-2.3 Estimation
-The likelihood of the data $\left\{y_{t_1}, \ldots, y_{t_n}\right\}$ can be expressed as $f\left(y_{t_1}, \ldots, y_{t_n} ; \theta\right)=f\left(y_{t_1} ; \theta\right) f\left(y_{t_2} \mid y_{t_1} ; \theta\right) \times \ldots \times f\left(y_{t_n} \mid y_{t_{n-1}} ; \theta\right)$, (9) where $\theta=\left(\sigma^2, \phi\right)$ is the parameter vector of the model. To describe clearly the estimation process, we assume here that the marginal and conditional distributions of the time series are Gaussian. Note that this assumption is not necessary to obtain the statistical properties stated in Theorem 1. In Section 5, we show an example where the conditional distribution is assumed to be Gamma, and in Section 6, we show an example where the conditional distribution is assumed to be a Student's $t$-distribution.
-Assume that
-$f\left(y_{t_1} ; \sigma^2, \phi\right) \sim N\left(0, \sigma^2\right)$ and
-$$
-f\left(y_{t_j} \mid y_{t_{j-1}} ; \sigma^2, \phi\right) \sim N\left(\phi^{t_j-t_{j-1}} y_{t_{j-1}}, \sigma^2\left(1-\phi^{2\left(t_j-t_{j-1}\right)}\right)\right.
-$$
-for $j=2, \ldots, n$. Based on equation (5), minus the log-likelihood of this process can be written as
-$$
-\ell(\theta)=\frac{n}{2} \log (2 \pi)+\frac{1}{2} \sum_{j=1}^n \log v_{t_j}+\frac{1}{2} \sum_{j=1}^n \frac{e_{t_j}^2}{v_{t_j}},
-$$
-where we define $e_{t_1}=y_{t_1}, e_{t_j}=y_{t_j}-\phi^{t_j-t_{j-1}} y_{t_{j-1}}$ for $j>1$ and their variances as $v_{t_j}=\operatorname{Var}\left(e_{t_j}\right)$.
+El objetivo es predecir los valores futuros de la serie $X_{\tau_{n+m}}$,
+ donde $m = 1,2,...$, basados en la información recolectada $X_{\tau_{1:n}} = { X_{\tau_1}, ..., X_{\tau_n} }$. 
+ El predictor de error cuadrático medio mínimo para $X_{\tau_{n+m}}$ es:
 
-Observe that the finite past predictor of the process at time $t_j$ is given by
-$\widehat{y}_{t_1}=0$, and $\widehat{y}_{t_j}=\phi^{t_j-t_{j-1}} y_{t_{j-1}}$, for $j=2, \ldots, n$.
-Therefore, $e_{t_j}=y_{t_j}-\widehat{y}_{t_j}$ is the prediction error with variance $v_{t_1}=\operatorname{Var}\left(e_{t_1}\right)=\sigma^2$,
-$v_{t_j}=P \operatorname{Var}\left(e_{t_j}\right)=\sigma^2\left[1-\phi^{2\left(t_j-t_{j-1}\right)}\right]$, for $j=2, \ldots, n$.
-By direct maximization of the log-likelihood (12), we can obtain the maximum likelihood estimator of $\sigma^2$,
-$\hat{\sigma}^2=\frac{1}{n} \sum_{j=1}^n \frac{\left(y_{t_j}-\widehat{y}_{t_j}\right)^2}{\tau_{t_j}}$, where $\tau_{t_j}=v_{t_j} / \sigma^2$.
-But it is not possible to find $\widehat{\phi}$, the maximum likelihood estimator of $\phi$, by direct maximization of the likelihood, but iterative methods
+\begin{equation}
+\hat{X}_{\tau_{n+m}} = E(X_{\tau_{n+m}}|X_{\tau_{1:n}})
+\label{eq:predictorIAR}
+\end{equation}
 
+Esto se debe a que la esperanza condicional minimiza el error cuadrático medio, como se demuestra en el apéndice.
+
+\begin{equation}
+E \left[ X_{\tau_{n+m}} - g\left( X_{\tau_{1:n}} \right) \right].
+\label{eq:ecmIAR}
+\end{equation}
+
+Si consideramos la predicción a un paso, $\hat{X}_{\tau_{n+1}}$, basada en el modelo \ref{eq:propuesta_modelo}, tenemos que:
+
+\begin{equation}
+\hat{X}_{n+1} = E(X{\tau_{n+1}}|X_{\tau_{1:n}}) = sign(\phi)|\phi|^{\Delta_{n+1}}X_{\tau_{n}}.
+\end{equation}
+
+Además, $X_{\tau_1} = W_1^{1/2}\varepsilon_{\tau_1}$, por lo tanto $\hat{X}_{\tau_1}=0$. Con estos resultados, el error de predicción es:
+
+\begin{equation}
+(X_{\tau_k} - \hat{X}_{\tau_k}) = W_{k}^{1/2}\varepsilon_{\tau_k}, \text{ } k=1,...,n
+\end{equation}
+
+Podemos ver que, debido a la forma en que se define el modelo, el error de predicción sigue una distribución normal con media 0 y varianza $W_k$.
+
+\section{Estimación}
+
+Sea $X_\tau$ observado en los puntos $\tau_1, ..., \tau_n$, la funcion de verosimilitud para estimar los
+parámetros $\sigma$ y $\phi$ es la siguiente:
+
+\begin{equation}
+   L(\phi, \sigma) = \prod_{i=1}^{n}\frac{1}{\sqrt{2\pi Wi}}e^{-\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{2W_i}}
+\end{equation}
+Ahora, aplicamos logaritmo para calcular la log-verosimilitud $l(\phi,\sigma)$
+\begin{equation}
+   \begin{split}
+       l(\phi,\sigma) &= \sum_{i=1}^{n}\log\left(\frac{1}{\sqrt{2\pi Wi}}\right) -\frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i}\\
+                      &= -\frac{1}{2}\sum_{i=1}^{n}\log\left(2\pi W_i\right) -\frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i}\\
+                      &= -\frac{n}{2}\log(2\pi)-\frac{1}{2}\sum_{i=1}^{n}\log(W_i)  -\frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i}
+   \end{split}
+   \label{eq:LogLikehod}
+\end{equation}
+Donde $W_i$ es definido por la ecuación \ref{eq:w}. Por maximizacion directa de la funcion de log verosimilitud (\ref{eq:LogLikehod}), podemos obtener el estimador de $\sigma^2$
+
+\begin{equation}
+   \begin{split}
+   \frac{\partial(l)}{\partial W_i} &= \frac{1}{2}\sum_{i=1}^{n}\frac{1}{W_i} - \frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i^2} = 0
+   \end{split}
+\end{equation}
+
+\begin{equation}
+   \begin{split}
+   \hat{\sigma}^2 &= \frac{1}{n}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i/\sigma}
+   \end{split}
+\end{equation}
+
+Pero, la estimación de $\phi$ no es posible calcularla por maximizacion directa, por tanto, es necesario acudir a métodos
+iterativos.
 \section{Estimación Bootstrap}
 
 Ahora, aplicamos el método bootstrap descrito en \ref{section:Bootstrap} para estimar $\phi_0$ 
@@ -246,6 +287,15 @@ se realizaron simulaciones de distribuciones de muestras finitas.
 Los resultados de estas simulaciones se muestran en las figuras \ref{fig:monte_carlo_res1} y \ref{fig:monte_carlo_res2}. 
 Se puede observar que ambos estimadores presentan un comportamiento satisfactorio, parecen ser insesgados y consistentes en sus resultados.
 
+Note que para valores pequeños de $n$ y para valores cercanos a cero de $\phi$, 
+los estimadores tienden a tener una mayor variabilidad.
+Este hallazgo es importante para el análisis de los resultados, 
+ya que sugiere que la precisión de los estimadores puede verse afectada por factores como la cantidad de datos 
+disponibles y la magnitud del parámetro de interés.
+
+En segundo lugar, para ambos estimadores, presentamos las medidas de rendimiento para ambos métodos de estimación
+las cuales se ven reflejadas en la tabla \ref{table:performance}
+
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/sim3.eps}
@@ -260,14 +310,6 @@ Se puede observar que ambos estimadores presentan un comportamiento satisfactori
     \end{minipage}
 \end{figure}
 
-Note que para valores pequeños de $n$ y para valores cercanos a cero de $\phi$, 
-los estimadores tienden a tener una mayor variabilidad.
-Este hallazgo es importante para el análisis de los resultados, 
-ya que sugiere que la precisión de los estimadores puede verse afectada por factores como la cantidad de datos 
-disponibles y la magnitud del parámetro de interés.
-
-En segundo lugar, para ambos estimadores, presentamos las medidas de rendimiento para ambos métodos de estimación
-las cuales se ven reflejadas en la tabla \ref{table:performance}
 \begin{table}[h]
     \centering
     \caption{Resultados del estudio de Monte Carlo}
@@ -301,4 +343,60 @@ las cuales se ven reflejadas en la tabla \ref{table:performance}
     \label{table:performance}
     \end{table}
 
-    
+\clearpage
+\newpage
+\section{Aplicación en datos de espeleotemas\protect\footnote{Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}
+
+Estos datos han sido descritos y trabajados por \cite{mudelse2014climate} en su libro y los hemos encontrado disponibles en la \href{https://www.manfredmudelsee.com/}{pagina web del autor}. Este conjunto de datos cuenta con 1345 datos donde se miden el pocentaje de 
+isotopos de oxigeno 18 y 16 estables; $\delta^{18}O$ a travez de los años, la escala de tiempo (para años antes de 1950) es basada en
+se basada en 18 edades espectrométricas de masa $U/Th$. La figura \ref{fig:example} muestra el comportamiento de la serie de tiempo descrita y la figura 
+\ref{fig:example_delta} muestra el comportamiento irregularmente espaciado entre los tiempos, note que si esta fuera una serie regular, este grafico seríá una
+linea constante horizontal en $y=1$
+
+
+
+\begin{figure}[h]
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_original.eps}
+    \caption{Comportamiento de la serie de tiempo.}
+    \label{fig:example}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_delta.eps}
+    \caption{Comportamiento del $\Delta_n$ de la serie.}
+    \label{fig:example_delta}
+    \end{minipage}
+\end{figure}
+
+Ahora procedemos a realizar nuestras estimaciones tanto por Bootstrap como por Máxima Verosimilitud, en este caso, ejemplificamos el uso tanto en la serie original
+como en la serie diferenciada, esta diferenciacion se realiza con el fin de eliminar tendencias y comportamientos ciclicos en nuestra serie
+de tiempo, este caso, $\nabla X_{\tau_n} = X_{\tau_n}-X_{\tau_{n-1}}$ es la serie diferenciada. La figure \ref{fig:example_diff_fit}
+muestra el resultado de la serie diferenciada y la figura \ref{fig:example_fit} muestra los resultados para la serie original.
+
+Los parametros estimados para la serie original son los siguientes:
+
+$$\hat{\phi}^{MLE}= 0.997 \quad \hat{se}(\phi^{MLE})=0.0007 \quad \hat{\sigma}^{2}_{MLE}=0.0112 \quad \hat{se}(\hat{\sigma}^{2}_{MLE})=0.0020$$
+$$\hat{\phi}^{b}= 0.997 \quad \hat{se}(\phi^{b})=0.00086 \quad \hat{\sigma}^{2}_{b}=0.0069  \quad \hat{se}(\hat{\sigma}^{2}_{b})=0.0020$$
+
+Seguido a esto, calculamos los parametros para la serie diferenciada obteniendo:
+$$\hat{\phi}^{MLE}= -0.790 \quad \hat{se}(\phi^{MLE})=0.0136 \quad \hat{\sigma}^{2}_{MLE}=0.0190 \quad \hat{se}(\hat{\sigma}^{2}_{MLE})=0.0037$$
+$$\hat{\phi}^{b}= -0.789 \quad \hat{se}(\phi^{b})=0.0149 \quad \hat{\sigma}^{2}_{b}= 0.0167  \quad \hat{se}(\hat{\sigma}^{2}_{b})=0.04785$$
+
+
+\begin{figure}[h]
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_original_estimation.eps}
+    \caption{Comportamiento del modelo estimado con la serie original.}
+    \label{fig:example_fit}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_diff_estimation.eps}
+    \caption{Comportamiento del modelo estimado con la serie diferenciada.}
+    \label{fig:example_diff_fit}
+    \end{minipage}
+\end{figure}
+
+
+

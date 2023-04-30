@@ -2,10 +2,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\textbf {3-1}}{\ignorespaces simulación del modelo IAR con coeficientes positivos}}{14}{}%
-\contentsline {figure}{\numberline {\textbf {3-2}}{\ignorespaces simulación del modelo IAR con coeficientes negativos}}{15}{}%
-\contentsline {figure}{\numberline {\textbf {3-3}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{16}{}%
-\contentsline {figure}{\numberline {\textbf {3-4}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{17}{}%
-\contentsline {figure}{\numberline {\textbf {3-5}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{17}{}%
+\contentsline {figure}{\numberline {\textbf {3-1}}{\ignorespaces simulación del modelo IAR con coeficientes positivos}}{16}{figure.3.1}%
+\contentsline {figure}{\numberline {\textbf {3-2}}{\ignorespaces simulación del modelo IAR con coeficientes negativos}}{17}{figure.3.2}%
+\contentsline {figure}{\numberline {\textbf {3-3}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{18}{figure.3.3}%
+\contentsline {figure}{\numberline {\textbf {3-4}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{19}{figure.3.4}%
+\contentsline {figure}{\numberline {\textbf {3-5}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{19}{figure.3.5}%
+\contentsline {figure}{\numberline {\textbf {3-6}}{\ignorespaces Comportamiento de la serie de tiempo.}}{20}{figure.3.6}%
+\contentsline {figure}{\numberline {\textbf {3-7}}{\ignorespaces Comportamiento del $\Delta _n$ de la serie.}}{20}{figure.3.7}%
+\contentsline {figure}{\numberline {\textbf {3-8}}{\ignorespaces Comportamiento del modelo estimado con la serie original.}}{21}{figure.3.8}%
+\contentsline {figure}{\numberline {\textbf {3-9}}{\ignorespaces Comportamiento del modelo estimado con la serie diferenciada.}}{21}{figure.3.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

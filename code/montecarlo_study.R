@@ -8,7 +8,7 @@ mle_phi <- 0
 mle_se <- 0
 bte_phi <- 0
 bte_se <- 0
-df_final  <- data.frame()
+df_final <- data.frame()
 for (n in n) {
     print(n)
     for (p in phi) {
@@ -34,24 +34,49 @@ for (n in n) {
         df_final <- rbind(df_final, df_sim)
     }
 }
-df_final$n <- factor(df_final$n)
+
 
 write.csv(df_final, "resultados_simulacion.csv")
 
-
+df_final <- read.csv('data/resultados_simulacion.csv')
+df_final$n <- factor(df_final$n)
 library(ggplot2)
 library(tidyverse)
-install.packages("dplyr")
+#install.packages("dplyr")
+
+
+head(df_final)
+
+install.packages("latex2exp")
+library(latex2exp)
+appender <- function(string) {
+    TeX(paste("$\\phi_0 = $", string))
+}
+
+postscript("./../informe/Kap3/Fig_Cap3/sim3.eps")
+
+ggplot(df_final, aes(x = mle_phi, group = n)) +
+geom_density(aes(col = n)) +
+scale_color_manual(values = c("red", "blue", "black")) +
+facet_wrap(~ phi, scales = "free",
+                    labeller = as_labeller(appender, default = label_parsed)) +
+labs(x = expression(phi^MLE)) +
+theme(strip.background = element_blank(),
+          strip.text.x = element_text(size = 12))
+dev.off()
+
+
+postscript("./../informe/Kap3/Fig_Cap3/sim4.eps")
 
 ggplot(df_final, aes(x = bte_phi, group = n)) +
 geom_density(aes(col = n)) +
 scale_color_manual(values = c("red", "blue", "black")) +
-facet_wrap(~phi, scales = "free")
-
-ggplot(df_final, aes(x = bte_phi, group = n)) +
-geom_density(aes(col = n)) +
-scale_color_manual(values = c("red", "blue", "black")) +
-facet_wrap(~phi)
+facet_wrap(~ phi, scales = "free",
+                    labeller = as_labeller(appender, default = label_parsed)) +
+labs(x = expression(phi^b)) +
+theme(strip.background = element_blank(),
+          strip.text.x = element_text(size = 12))
+dev.off()
 
 library(dplyr)
 

@@ -216,29 +216,62 @@ Pero no es posible encontrar $\hat{\phi}$, el estimador por máxima verosimilitu
 recurrir a metodos iterativos. 
 
 
-\section{Estimación Bootstrap en Procesos Irregulares} \label{section:Bootstrap}
+% \section{Estimación Bootstrap en Procesos Irregulares} \label{section:Bootstrap}
 
-Para llevar a cabo la inferencia estadística es necesario poder derivar las distribuciones de los estadísticos
-utilizados para la estimación de los parámetros a partir de los datos. Si $\mathrm{N}$ es pequeño,
-o si los parámetros están cerca de los límites, las aproximaciones asintóticas pueden ser bastante pobres \citep{shumway2017time}.
-Además, en el caso de tiempo irregularmente espaciado, las aproximaciones asintóticas necesitan establecer condiciones fuertes
-que son difíciles de cumplir. Para superar estas dificultades y poder obtener aproximaciones de las distribuciones 
-de muestras finitas, podríamos utilizar el método bootstrap. La idea en series temporales es ajustar un modelo adecuado a los datos,
-construir los residuos del modelo ajustado y, a continuación, generar nuevas series incorporando muestras aleatorias de los residuos
-al modelo ajustado. Los residuos suelen ser recientes para que tengan la misma media que las innovaciones del modelo.
-
-
-Siguiendo a \cite{bose1990bootstrap}, para $n \geq 2$, define las innovaciones estimadas o residuales de la predicción un paso 
-adelante, como
-$$
-e_{\tau_n}=\sum_{j=0}^{n-1}(-1)^j \frac{\prod_{k=n-j+1}^n \theta^{\Delta_k}}{\prod_{l=n-j}^{n-1} c_l(\theta)} X_{\tau_{n-j}}
-$$
-y $e_{\tau_1}=X_{\tau_1}$. Utilizando la estructura del proceso y asumiendo que el modelo ajustado es, de hecho, el modelo verdadero
- para los datos tenemos:
-$$
-e_{\tau_n}=\varepsilon_{\tau_n}+(-1)^{n-1} \frac{\prod_{k=1}^n \theta^{\Delta_k}}{\prod_{l=0}^{n-1} c_l(\theta)} \varepsilon_{t_0} .
-$$
-
-Por lo tanto, $e_{\tau_n}$ y $\varepsilon_{\tau_n}$ son cercanos para todo $n$ grande si $|\theta|<1$, lo que demuestra que el remuestreo es adecuado en esta situación.
+% Para llevar a cabo la inferencia estadística es necesario poder derivar las distribuciones de los estadísticos
+% utilizados para la estimación de los parámetros a partir de los datos. Si $\mathrm{N}$ es pequeño,
+% o si los parámetros están cerca de los límites, las aproximaciones asintóticas pueden ser bastante pobres \citep{shumway2017time}.
+% Además, en el caso de tiempo irregularmente espaciado, las aproximaciones asintóticas necesitan establecer condiciones fuertes
+% que son difíciles de cumplir. Para superar estas dificultades y poder obtener aproximaciones de las distribuciones 
+% de muestras finitas, podríamos utilizar el método bootstrap. La idea en series temporales es ajustar un modelo adecuado a los datos,
+% construir los residuos del modelo ajustado y, a continuación, generar nuevas series incorporando muestras aleatorias de los residuos
+% al modelo ajustado. Los residuos suelen ser recientes para que tengan la misma media que las innovaciones del modelo.
 
 
+% Siguiendo a \cite{bose1990bootstrap}, para $n \geq 2$, define las innovaciones estimadas o residuales de la predicción un paso 
+% adelante, como
+% $$
+% e_{\tau_n}=\sum_{j=0}^{n-1}(-1)^j \frac{\prod_{k=n-j+1}^n \theta^{\Delta_k}}{\prod_{l=n-j}^{n-1} c_l(\theta)} X_{\tau_{n-j}}
+% $$
+% y $e_{\tau_1}=X_{\tau_1}$. Utilizando la estructura del proceso y asumiendo que el modelo ajustado es, de hecho, el modelo verdadero
+%  para los datos tenemos:
+% $$
+% e_{\tau_n}=\varepsilon_{\tau_n}+(-1)^{n-1} \frac{\prod_{k=1}^n \theta^{\Delta_k}}{\prod_{l=0}^{n-1} c_l(\theta)} \varepsilon_{t_0} .
+% $$
+
+% Por lo tanto, $e_{\tau_n}$ y $\varepsilon_{\tau_n}$ son cercanos para todo $n$ grande si $|\theta|<1$, lo que demuestra que el remuestreo es adecuado en esta situación.
+
+
+\section{Modelo autoregresivo complejo irregular (CIAR)}
+
+Para derivar una extensión compleja del modelo \ref{eq:IAR}, se sigue el mismo proceso que para series de tiempo regulares. Suponiendo que $x_{t_{j}}$ es una secuencia de valores complejos, 
+tal que $x_{t_{j}}=y_{t_{j}}+i z_{t_{j}} \text{ } \forall j=1, \ldots, n$, y de manera similar, $\phi=\phi^{R}+i \phi^{I}$ es el coeficiente complejo del modelo 
+y $\varepsilon_{t_{j}}=\varepsilon_{t_{j}}^{R}+i \varepsilon_{t_{j}}^{I}$ es un ruido blanco complejo, definimos el proceso CIAR como
+
+\begin{equation}
+	y_{t_{j}}+i z_{t_{j}}=\left(\phi^{R}+i \phi^{I}\right)^{t_{j}-t_{j-1}}\left(y_{t_{j-1}}+i z_{t_{j-1}}\right)+\sigma_{t_{j}}\left(\varepsilon_{t_{j}}^{R}+i \varepsilon_{t_{j}}^{I}\right)
+	\label{eq:CIAR}
+\end{equation}
+
+donde $\sigma_{t_{j}}=\sigma \sqrt{1-\left|\phi^{t_{j}-t_{j-1}}\right|^{2}}$ y $|$.$|$ es el módulo de un número complejo. 
+Suponemos que solo se observa la parte real $y_{t_{j}}$ y que la parte imaginaria $z_{t_{j}}$ es un proceso latente. Además, se asume que $\varepsilon_{t_{j}}^{R}$ y $\varepsilon_{t_{j}}^{I}$, 
+la parte real e imaginaria de $\varepsilon_{t_{j}}$, respectivamente, son independientes con media cero y varianza positiva $\mathbb{V}\left(\varepsilon_{t}^{R}\right)=1$ y $\mathbb{V}\left(\varepsilon_{t}^{I}\right)=c$, 
+respectivamente, donde $c$ es un parámetro fijo que toma valores en $\mathbb{R}^{+}$. Generalmente, se supone que $c=1$, y los valores iniciales son $y_{t_{1}}=\sigma \varepsilon_{t_{1}}^{R}$ y $z_{t_{1}}=\sigma \varepsilon_{t_{1}}^{I}$.
+En el siguiente lema, se presentan algunas de las propiedades de este proceso.
+
+\begin{lemma}
+	Considere el proceso CIAR $x_{t_{j}}$ descrito por la ecuación \ref{eq:CIAR}. Defina $\gamma_{0}=\mathbb{E}\left(\bar{x}_{t{j}} x_{t_{j}}\right), \gamma_{k}=\mathbb{E}\left(\bar{x}_{t{j+k}} x_{t_{j}}\right)$ 
+	y $\rho_{k}$ como la varianza, autocovarianza y autocorrelación, respectivamente, del proceso $x_{t_{j}}$. A continuación, el valor esperado, la varianza, la autocovarianza y la autocorrelación del proceso 
+	\begin{itemize}
+		\item $\mathbb{E}\left(x_{t_{j}}\right) = 0$
+		\item $\mathbb{V}\left(x_{t_{j}}\right)=\gamma_{0}=\mathbb{E}\left(\bar{x}_{t{j}} x_{t_{j}}\right)=\sigma^{2}(1+c)$,
+		\item $\gamma_{k}=\mathbb{E}\left(\bar{x}_{t{j+k}} x_{t_{j}}\right)=\overline{\phi^{\Delta_{k}}} \sigma^{2}(1+c)$,
+		\item $\rho_{k}=\overline{\phi^{\Delta_{k}}}$
+	\end{itemize}
+	donde $\Delta_{k}=t_{j+k}-t_{j}$ denota las diferencias de tiempo entre los tiempos de observación $t_{j+k}$ y $t_{j}$. Además, 
+	$\bar{x}{t{j}}$ es el conjugado complejo de $x_{t_{j}}$.
+	\label{Lemma1}
+\end{lemma}
+ 
+ Si $|\phi|=\left|\phi^{R}+i \phi^{I}\right|<1$, los resultados en el Lema \ref{Lemma1} muestran que la secuencia compleja $x_{t_{j}}$ es un proceso débilmente estacionario. 
+ Observamos que la ACF $\rho_{k}$ del proceso CIAR decae a una tasa $\phi^{t_{j+k}-t_{j}}$ (la llamada decaimiento exponencial). Esta estructura de autocorrelación es diferente a la de un proceso CARFIMA de memoria antipersistente o de memoria intermedia, ya que la ACF de estos últimos decae más lentamente que un decaimiento exponencial. Por lo tanto, aunque ambos modelos pueden ajustar series de tiempo irregulares con valores negativos de la ACF, el uso apropiado de estos modelos dependerá de la estructura de correlación de los datos. Para tomar una decisión sobre el modelo más adecuado para los datos, se pueden utilizar técnicas basadas en la verosimilitud de los datos, como AIC, BIC, y así sucesivamente.

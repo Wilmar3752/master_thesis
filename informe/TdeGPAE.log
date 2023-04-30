@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  28 MAR 2023 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  27 APR 2023 07:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -218,16 +218,121 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count283
+\Hy@pagecounter=\count284
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count285
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count286
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen163
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count287
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count288
+\c@Item=\count289
+\c@Hfootnote=\count290
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count291
+\c@bookmark@seq@number=\count292
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip67
 ) (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
  (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
 )
-\c@mv@rm=\count283
-\c@mv@boldrm=\count284
-\c@mv@sf=\count285
-\c@mv@boldsf=\count286
+\c@mv@rm=\count293
+\c@mv@boldrm=\count294
+\c@mv@sf=\count295
+\c@mv@boldsf=\count296
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 354.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 354.
@@ -514,33 +619,38 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `sf'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 620.
 LaTeX Info: Redefining \not on input line 1580.
+) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box59
+\fn@width=\dimen166
 ) (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip67
-\RaggedLeftLeftskip=\skip68
-\RaggedRightLeftskip=\skip69
-\CenteringRightskip=\skip70
-\RaggedLeftRightskip=\skip71
-\RaggedRightRightskip=\skip72
-\CenteringParfillskip=\skip73
-\RaggedLeftParfillskip=\skip74
-\RaggedRightParfillskip=\skip75
-\JustifyingParfillskip=\skip76
-\CenteringParindent=\skip77
-\RaggedLeftParindent=\skip78
-\RaggedRightParindent=\skip79
-\JustifyingParindent=\skip80
+\CenteringLeftskip=\skip68
+\RaggedLeftLeftskip=\skip69
+\RaggedRightLeftskip=\skip70
+\CenteringRightskip=\skip71
+\RaggedLeftRightskip=\skip72
+\RaggedRightRightskip=\skip73
+\CenteringParfillskip=\skip74
+\RaggedLeftParfillskip=\skip75
+\RaggedRightParfillskip=\skip76
+\JustifyingParfillskip=\skip77
+\CenteringParindent=\skip78
+\RaggedLeftParindent=\skip79
+\RaggedRightParindent=\skip80
+\JustifyingParindent=\skip81
 )
-\c@theorem=\count287
-\c@definition=\count288
+\c@theorem=\count297
+\c@lemma=\count298
+\c@definition=\count299
 )
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box59
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box60
 ) (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
 \openout1 = `TdeGPAE.aux'.
 
@@ -574,18 +684,22 @@ LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 7
 File: ujkpexa.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen162
-\scratchbox=\box60
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\scratchcounter=\count301
+\scratchdimen=\dimen167
+\scratchbox=\box61
+\nofMPsegments=\count302
+\nofMParguments=\count303
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen163
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen168
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -593,10 +707,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+Package hyperref Info: Link coloring OFF on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count307
+)
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
+ (./TdeGPAE.out) (./TdeGPAE.out)
+\@outlinefile=\write3
+\openout3 = `TdeGPAE.out'.
+
 \openout2 = `HojaTitulo/HojaTituloPAE.aux'.
 
  (./HojaTitulo/HojaTituloPAE.tex
-<HojaTitulo/Fig_HojaTitulo/Univalle.jpg, id=1, 563.10374pt x 799.48688pt>
+<HojaTitulo/Fig_HojaTitulo/Univalle.jpg, id=111, 563.10374pt x 799.48688pt>
 File: HojaTitulo/Fig_HojaTitulo/Univalle.jpg Graphic file (type jpg)
 <use HojaTitulo/Fig_HojaTitulo/Univalle.jpg>
 Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/Univalle.jpg  used on input line 7.
@@ -633,18 +764,18 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 
 
 ])
-\tf@toc=\write3
-\openout3 = `TdeGPAE.toc'.
+\tf@toc=\write4
+\openout4 = `TdeGPAE.toc'.
 
  [10] (./TdeGPAE.lof)
-\tf@lof=\write4
-\openout4 = `TdeGPAE.lof'.
+\tf@lof=\write5
+\openout5 = `TdeGPAE.lof'.
 
  [11
 
 ] (./TdeGPAE.lot)
-\tf@lot=\write5
-\openout5 = `TdeGPAE.lot'.
+\tf@lot=\write6
+\openout6 = `TdeGPAE.lot'.
 
  [12
 
@@ -711,7 +842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-[7]) [8]
+[7] [8]) [9]
 \openout2 = `Kap3/Cap3.aux'.
 
  (./Kap3/Cap3.tex
@@ -721,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-[9
+[10
 
 
 
@@ -737,22 +868,42 @@ Overfull \hbox (28.03056pt too wide) in paragraph at lines 51--52
  []
 
 
-Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 10 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 77.
 
-[10] [11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 77.
+
+[11]
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 12 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[12]
-Overfull \hbox (6.96085pt too wide) in paragraph at lines 171--175
+[12] [13]
+
+LaTeX Warning: Reference `section:Bootstrap' on page 14 undefined on input line 207.
+
+
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 14 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[14]
+Overfull \hbox (6.96085pt too wide) in paragraph at lines 212--216
 \OT1/jkp/m/n/12 para $\OML/jkp/m/it/12 n \OT1/jkp/m/n/12 = 2\OML/jkp/m/it/12 ; [] ; \OT1/jkp/m/n/12 N$. El lla-mado re-muestreo basado en el mod-elo podr[]^^Pa pro-ceder por muestreo
  []
 
 
-Overfull \hbox (11.9545pt too wide) in paragraph at lines 171--175
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 212--216
 \OT1/jkp/m/n/12 equiprob-a-ble con reem-plazo de los resid-uos cen-tra-dos $\OML/jkp/m/it/12 e[] \OMS/jkp/m/n/12 ^^@ []\OML/jkp/m/it/12 ; [] ; e[] \OMS/jkp/m/n/12 ^^@ []$\OT1/jkp/m/n/12 , donde $[] = [][] \OML/jkp/m/it/12 e[]=\OT1/jkp/m/n/12 N \OMS/jkp/m/n/12 ^^@
  []
 
@@ -763,14 +914,16 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim1.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 20426 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Kap3/Fig_Cap3/sim1.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 236.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=90, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=380, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 195.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 236.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
-[13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim22.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 40026 bytes
@@ -778,34 +931,27 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim22.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 19911 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Kap3/Fig_Cap3/sim22.eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=95, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=381, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 201.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 242.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 14 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
- []
-
-[14 <./Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>] [15 <./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>]
-<Kap3/Fig_Cap3/4RzQZ8xYXY.pdf, id=125, 887.315pt x 578.16pt>
-File: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf Graphic file (type pdf)
-<use Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf  used on input line 237.
-(pdftex.def)             Requested size: 422.52054pt x 248.20294pt.
-
+[15]
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 16 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[16 <./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>]
+[16 <./Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>] [17 <./Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>]
+<Kap3/Fig_Cap3/4RzQZ8xYXY.pdf, id=421, 887.315pt x 578.16pt>
+File: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf  used on input line 278.
+(pdftex.def)             Requested size: 422.52054pt x 248.20294pt.
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim3.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 126876 bytes
@@ -813,15 +959,15 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim3.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 46861 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim3-eps-converted-to.pdf Kap3/Fig_Cap3/sim3.eps>
-(epstopdf)             \includegraphics on input line 251.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim3-eps-converted-to.pdf, id=133, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim3-eps-converted-to.pdf, id=426, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim3-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf  used on input line 251.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf  used on input line 301.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 251--252
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 301--302
 [][] 
  []
 
@@ -832,37 +978,129 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 47015 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4-eps-converted-to.pdf Kap3/Fig_Cap3/sim4.eps>
-(epstopdf)             \includegraphics on input line 257.
+(epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4-eps-converted-to.pdf, id=134, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4-eps-converted-to.pdf, id=427, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf  used on input line 257.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf  used on input line 307.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 257--258
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 307--308
 [][] 
  []
 
 
-Overfull \hbox (42.6947pt too wide) in paragraph at lines 274--302
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (42.6947pt too wide) in paragraph at lines 316--344
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [17 <./Kap3/Fig_Cap3/sim3-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>]
+
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 18 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[18]
+[18 <./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>] [19 <./Kap3/Fig_Cap3/sim3-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 348.
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_original.eps>
+(epstopdf)                    date: 2023-04-12 19:38:07
+(epstopdf)                    size: 40960 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-04-12 19:38:08
+(epstopdf)                    size: 24627 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_original.eps>
+(epstopdf)             \includegraphics on input line 360.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf, id=468, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf  used on input line 360.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 360--361
+[][] 
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_delta.eps>
+(epstopdf)                    date: 2023-04-12 19:37:42
+(epstopdf)                    size: 21754 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-04-12 19:37:55
+(epstopdf)                    size: 16321 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf Kap3/Fig_Cap3/example_delta.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf, id=469, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf  used on input line 366.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 366--367
+[][] 
+ []
+
+
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 20 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[20
+
+ <./Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf> <./Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_original_estimation.eps>
+(epstopdf)                    date: 2023-04-13 07:34:47
+(epstopdf)                    size: 40308 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-04-13 07:34:48
+(epstopdf)                    size: 23931 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_original_estimation.eps>
+(epstopdf)             \includegraphics on input line 389.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf, id=495, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf  used on input line 389.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 389--390
+[][] 
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_diff_estimation.eps>
+(epstopdf)                    date: 2023-04-12 20:04:05
+(epstopdf)                    size: 39844 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-04-12 20:04:35
+(epstopdf)                    size: 23031 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_diff_estimation.eps>
+(epstopdf)             \includegraphics on input line 395.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf, id=496, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf  used on input line 395.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 395--396
+[][] 
+ []
+
+) [21 <./Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf> <./Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 4.
-) [19
+) [22
 
 
 
@@ -872,29 +1110,37 @@ Chapter 4.
 
  (./Anexos/AnexosPAE.tex
 Appendix A.
-) [20
+) [23
 
 
 
 
-] (./TdeGPAE.bbl [21
+] (./TdeGPAE.bbl [24
 
 
 
-]) [22] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux)) ) 
+]) [25] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `TdeGPAE.out' has not changed.
+(rerunfilecheck)             Checksum: 7B2256C06237E966891711AF45F7D188;6993.
+ ) 
 Here is how much of TeX's memory you used:
- 6476 strings out of 478287
- 99952 string characters out of 5849289
- 428730 words of memory out of 5000000
- 24484 multiletter control sequences out of 15000+600000
- 506014 words of font info for 106 fonts, out of 8000000 for 9000
+ 13489 strings out of 478287
+ 211210 string characters out of 5849289
+ 538247 words of memory out of 5000000
+ 31254 multiletter control sequences out of 15000+600000
+ 519013 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,65p,1026b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,15n,66p,2051b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on TdeGPAE.pdf (34 pages, 473473 bytes).
+Output written on TdeGPAE.pdf (37 pages, 562580 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

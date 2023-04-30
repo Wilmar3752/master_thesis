@@ -68,11 +68,21 @@ calc_new_x <- function(innovations, w_n, phi_n) {
   return(x_new)
 }
 
-iar_mle <- function(par, fn, data, hessian) {
-    p <- optim(par = par, fn = fn, x = data, hessian = hessian)
+iar_mle <- function(par = c(-0.99, 0.99),
+                    fn = iar_loglik, data,
+                    hessian = TRUE,
+                    method = "Nelder-Mead") {
+    p <- optim(par = c(par[1], abs(par[2])),
+              fn = fn, x = data,
+              hessian = hessian,
+              method = method)
     par <- p$par
-    stde <- sqrt(diag(solve(p$hessian)))
-    mle_list <- list("par" = par, "stde" = stde)
+    if (hessian == TRUE) {
+      stde <- sqrt(diag(solve(p$hessian)))
+      mle_list <- list("par" = par, "stde" = stde)
+    }else {
+      mle_list <- list("par" = par)#, "stde" = stde)
+    }
     return(mle_list)
 }
 
@@ -80,12 +90,12 @@ iar_boot_est <- function(x, num_bootstrap_trayetories) {
   delta_n <- diff(x$t_n)
   mle <- iar_mle(par = c(-0.99, 0.99),
                 fn = iar_loglik,
-                data = sim,
+                data = x,
                 hessian = TRUE)
   par <- mle$par
   w_n <- calc_w(delta_n, par[1], par[2])
-  x_hat <- calc_xhat(sim, par[1])
-  innovations <- calc_innovations(sim, x_hat = x_hat, w_n = w_n)
+  x_hat <- calc_xhat(x, par[1])
+  innovations <- calc_innovations(x, x_hat = x_hat, w_n = w_n)
   phi_n <- calc_phi_n(par[1], delta_n)
   phi_boost <- 0
   sigma_boost <- 0
@@ -94,11 +104,12 @@ iar_boot_est <- function(x, num_bootstrap_trayetories) {
       innovation_sample <- 0
       innovation_sample <- sample(innovations, replace = TRUE)
       new_x <- calc_new_x(innovation_sample, w_n, phi_n)
-      sim$x <- new_x
-      p <- iar_mle(par = c(0.5, 1), fn = iar_loglik, data = sim, hessian = TRUE)
+      print(i)
+      x$x <- new_x
+      p <- iar_mle(par = c(-0.99, 0.99), fn = iar_loglik, data = x, hessian = FALSE)
       par <- p$par
       phi_boost[i] <- par[1]
       sigma_boost[i] <- par[2]
 }
-return(phi_boost)
+return(cbind(phi_boost,sigma_boost))
 }
