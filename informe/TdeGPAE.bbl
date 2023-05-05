@@ -16,7 +16,8 @@ Dilmaghani, S., Henry, I.~C., Soonthornnonda, P., Christensen, E.~R.
   Palma}{2019}{elorrieta2019discrete}
 Elorrieta, F., Eyheramendy, S. \harvardand\ Palma, W.  \harvardyearleft
   2019\harvardyearright , `Discrete-time autoregressive model for unequally
-  spaced time-series observations', {\em arXiv preprint arXiv:1906.11158} .
+  spaced time-series observations', {\em Astronomy \& Astrophysics} {\bf
+  627},~A120.
 
 \harvarditem[Eyheramendy et~al.]{Eyheramendy, Elorrieta \harvardand\
   Palma}{2018}{eyheramendy2018irregular}
@@ -55,6 +56,15 @@ Novoseltseva, M., Gutova, S. \harvardand\ Glinchikov, K.  \harvardyearleft
   2019\harvardyearright , Spatial and econometric modeling of the demographic
   situation in the kemerovo region, {\em in} `IOP Conference Series: Earth and
   Environmental Science', Vol. 272, IOP Publishing, p.~032155.
+
+\harvarditem[Ojeda et~al.]{Ojeda, Palma, Eyheramendy \harvardand\
+  Elorrieta}{2023}{ojedaIMA}
+Ojeda, C., Palma, W., Eyheramendy, S. \harvardand\ Elorrieta, F.
+  \harvardyearleft 2023\harvardyearright , A novel first-order autoregressive
+  moving average model to analyze discrete-time series irregularly observed,
+  {\em in} O.~Valenzuela, F.~Rojas, L.~J. Herrera, H.~Pomares \harvardand\
+  I.~Rojas, eds, `Theory and Applications of Time Series Analysis and
+  Forecasting', Springer International Publishing, Cham, pp.~91--103.
 
 \harvarditem[Rindorf et~al.]{Rindorf, Cadigan, Howell, Eero \harvardand\
   Gislason}{2020}{rindorf2020periodic}

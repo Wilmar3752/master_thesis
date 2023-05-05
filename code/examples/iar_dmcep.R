@@ -1,4 +1,5 @@
 #install.packages("iAR")
+source('utils.R')
 library(iAR)
 data(dmcep)
 head(dmcep)
@@ -8,7 +9,15 @@ colnames(data) <- c("t_n", "x", 'merr')
 data$x <- as.numeric(data$x) ## convierto en numericos
 data$t_n <- as.numeric(data$t_n)
 
-#data$x <- data$x - mean(data$x)
+
+f1=0.7410152
+foldlc(dmcep,f1)
+fit=harmonicfit(dmcep,f1)
+f2=0.5433353
+foldlc(cbind(dmcep$t,fit$res,dmcep$merr),f2)
+data2 <- cbind(dmcep$t,fit$res,dmcep$merr)
+fit=harmonicfit(data2,f2)
+data$x <- fit$res
 
 plot(data[, 1], data[, 2], pch = 20, type = "l", xaxt = "n",
            xlab = expression(t[n]), ylab = expression(X[t[n]]))
@@ -19,7 +28,7 @@ axis(1, at = seq(0, (max(data[, 1]) + 50), 50), col = "black")
 pars <- iar_mle(par = c(-0.99, 0.99),
                         fn = iar_loglik,
                         data = data,
-                        hessian = TRU)
+                        hessian = TRUE)
 pars
 pred <- calc_xhat(data, pars$par[1])
 lines(data$t_n, pred, col="red", lty = 1,lwd=1)

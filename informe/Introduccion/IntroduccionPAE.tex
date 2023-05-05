@@ -1,81 +1,76 @@
 \pagenumbering{arabic}
 \chapter{Introducci\'{o}n}
-Los procesos estocásticos, particularmente el análisis de series de 
-tiempo, hacen parte de las metodologías estadísticas más utilizadas
-en la actualidad, ya sea para automatizar procesos de Machine Learning
-enfocados al pronóstico de valores futuros o para conocer las
-características propias de un fenómeno y su estructura de 
-autocorrelación. Dicha función de autocorrelación puede ser 
-positiva, con importancia en muchos contextos cómo la demografía
-\citep[p.ej.]{novoseltseva2019spatial} o la explicación de 
-fenómenos ecológicos \citep[p.ej.]{yang2019predictability}, 
-entre otras. Las autocorrelaciones negativas también tienen 
-mucha importancia práctica, por ejemplo; en el sector financiero 
-para conocer el comportamiento de los rendimientos de acciones 
-\citep[p.ej.]{kuttu2017feedback} y en la biología 
-\citep[p.ej.]{rindorf2020periodic}. Bajo este contexto, los 
-procesos estocásticos son importantes en diversos campos del 
-conocimiento para darnos a conocer las características de la
-dependencia temporal de un evento de interés y con ella tomar 
-decisiones importantes.
 
 
-La teoría de series temporales ha proporcionado diversos métodos para 
-modelar la autocorrelación de una secuencia de interés, entre ellos, 
-los modelos autorregrevos integrados de medias móviles (ARIMA), 
-sin embargo, estos métodos asumen que las observaciones son tomadas
-regularmente en el tiempo, supuesto que en muchos casos no es válido,
-pues la presencia de valores faltantes o la misma naturaleza de las 
-observaciones, pueden inducir a que la serie de tiempo sea irregularmente
-espaciada \citep{elorrieta2019discrete}. Es común encontrar series de 
-tiempo irregularmente espaciadas en diversas aplicaciones, para 
-diferentes áreas del conocimiento: sistemas caóticos, medicina, 
-imágenes satelitales y calidad del aire; ver por ejemplo 
-\cite{shamsan2020intrinsic}, \cite{liu2019comparison},
-\cite{ghaderpour2020change} y 
-\cite{dilmaghani2007harmonic}, entre otros.
+Los procesos estocásticos, y en particular el análisis de series de tiempo,
+son metodologías estadísticas ampliamente utilizadas en la actualidad. 
+Estas técnicas se aplican comúnmente en el pronóstico de valores futuros
+y en el estudio de las características de un fenómeno, incluyendo su 
+estructura de autocorrelación. La función de autocorrelación puede ser 
+positiva, lo que es importante en muchos contextos, como la demografía 
+(por ejemplo, \cite{novoseltseva2019spatial}) o la explicación de fenómenos 
+ecológicos (por ejemplo, \cite{yang2019predictability}). También pueden darse 
+autocorrelaciones negativas, que son relevantes en el sector 
+financiero para entender el comportamiento de los rendimientos de 
+acciones (por ejemplo, \cite{kuttu2017feedback}) y en la biología 
+(por ejemplo, \cite{rindorf2020periodic}). En este contexto, los procesos 
+estocásticos son importantes en diversos campos del conocimiento para 
+caracterizar la dependencia temporal de un evento de interés y tomar 
+mejores decisiones.
+
+
+La teoría de series temporales es ampliamente utilizada en la actualidad
+para modelar la autocorrelación de una secuencia de interés. Uno de 
+los métodos más populares es el modelo autorregresivo integrado de 
+medias móviles (ARIMA). Sin embargo, este y otros métodos similares 
+asumen que las observaciones son tomadas regularmente en el tiempo, 
+lo cual no siempre es el caso en la práctica. Esto puede deberse a la 
+presencia de valores faltantes o a la naturaleza de las observaciones, 
+lo que puede hacer que la serie de tiempo sea irregularmente espaciada 
+\citep{elorrieta2019discrete}. De hecho, es común encontrar series de 
+tiempo con este tipo de irregularidades en diversas aplicaciones, como
+en sistemas caóticos, medicina, imágenes satelitales y calidad del 
+aire, entre otros \citep{shamsan2020intrinsic, liu2019comparison, 
+ghaderpour2020change, dilmaghani2007harmonic}.
 
 
 
-En la actualidad, la literatura proporciona varios métodos para
-modelar series de tiempo irregularmente espaciadas, algunos 
-autores como \cite{adorf1995interpolation} transforman 
-las series de tiempo irregulares en regulares vía interpolación,
-método que puede generar sesgos;  \cite{robinson1977estimation} 
-aborda el problema tratando la serie de tiempo como una realización
-discreta de un proceso estocástico de tiempo continuo, aproximación
-que también presenta problemas. Recientemente, 
-\cite{eyheramendy2018irregular} proponen el Modelo Autorregresivo 
-Irregular  (\emph{IAR}) de primer orden, el cual tiene la limitación no 
-de aceptar valores de negativos en su función de autocorrelación (ACF); 
-este problema fue resuelto por los autores en un estudio posterior,
-en el cual proponen el modelo Autorregresivo Complejo Irregular 
-(\emph{CIAR}). \citep{elorrieta2019discrete}
+En la literatura actual, existen diversos métodos para modelar series de 
+tiempo que no son tomadas regularmente en el tiempo. Algunos autores, 
+como \cite{adorf1995interpolation}, abordan este problema transformando 
+las series irregulares en regulares a través de la interpolación, pero 
+este enfoque puede generar sesgos. Otros, como \cite{robinson1977estimation},
+tratan la serie de tiempo como una realización discreta de un proceso 
+estocástico de tiempo continuo, lo cual también presenta problemas. 
+Recientemente,  \cite{ojedaIMA} propusieron el modelo de medias móviles irregulares 
+(\emph{IMA}). Bajo normalidad, este modelo es estrictamente estacionario, 
+mientras que, considerando otros supuestos distribucionales, se comporta como un proceso débilmente estacionario. 
+
+
  
  
- 
-En la misma línea \ {ojeda:inpress-a} proponen el modelo de medias móviles irregular (\emph{IMA}), el cual bajo normalidad,
-es estrictamente estacionario, mientras que, teniendo en cuenta otros 
-supuestos distribucionales, se comporta cómo un proceso débilmente 
-estacionario; en ambos casos, los autores evalúan las propiedades
-estadísticas de los modelos y proponen métodos de estimación, 
-encontrando muy buenos resultados. Sin embargo, el modelo IMA 
-tiene una desventaja, en términos de que su ACF es únicamente 
-positiva, siendo incapaz de detectar autocorrelaciones negativas 
-y dejándolo muy limitado debido a la importancia practica que estas 
-suponen; problema que no tienen los modelos de medias móviles clásicos.
-El propósito de este trabajo es modificar el modelo IMA de modo que 
-permita modelar estructuras de autocorrelación positivas y negativas
-sin necesidad de irse al plano de los números complejos.
+
+En esta línea, Eyheramendy et al. \cite{eyheramendy2018irregular} proponen el Modelo 
+Autorregresivo Irregular (IAR) de primer orden. Sin embargo, este modelo tiene una limitación 
+importante: no acepta valores negativos en su función de autocorrelación (ACF). Para solucionar 
+este problema, los autores presentaron el Modelo Autorregresivo Complejo Irregular (CIAR) en un 
+estudio posterior \citep{elorrieta2019discrete}. En ambos casos, se han evaluado las propiedades 
+estadísticas de los modelos y se han propuesto métodos de estimación que han obtenido buenos 
+resultados. No obstante, tanto el modelo IAR como el IMA tienen una desventaja: su función de 
+autocorrelación solo puede ser positiva, lo que limita su capacidad para detectar 
+autocorrelaciones negativas, que suelen ser importantes en la práctica. Este problema no está 
+presente en los modelos ARIMA clásicos. Por lo tanto, el objetivo de este trabajo es 
+modificar el modelo IAR para que pueda modelar tanto autocorrelaciones positivas como negativas 
+sin necesidad de recurrir al plano complejo.
  
 \section{Objetivos}
 \subsection{Objetivo general}
-Proponer un modelo autorregresivo irregular de primer orden que 
-permita modelar estructuras de autocorrelación positivas y negativas
-subyacentes de un proceso estocástico.
+Desarrollar un modelo autorregresivo irregular de primer orden capaz de 
+modelar estructuras de autocorrelación subyacentes con valores tanto positivos como negativos.
 \subsection{Objetivos específicos}
 \begin{itemize}
-    \item Encontrar estimadores para el modelo propuesto.
+    \item Encontrar estimadores por máxima verosimilitud y bootstrap para el modelo propuesto.
     \item Evaluar las propiedades del modelo propuesto y sus estimaciones vía simulación.
-    \item Ajustar el modelo propuesto a un conjunto de datos para valorar su comportamiento en ejercicios de aplicación.
+    \item Aplicar el modelo propuesto a un conjunto de datos reales y evaluar su capacidad para capturar la dinámica 
+          de la serie de tiempo y realizar predicciones precisas.
 \end{itemize}

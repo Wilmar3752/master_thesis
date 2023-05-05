@@ -345,6 +345,39 @@ las cuales se ven reflejadas en la tabla \ref{table:performance}
 
 \clearpage
 \newpage
+
+\section{Comparación del Modelo IAR vs el CIAR}
+En este apartado, nos disponemos a comparar nuestra solución, con la solucion propuesta en \cite{elorrieta2019discrete}
+descrita en la sección \ref{section:CIAR} (El modelo CIAR), para ello, se plantea un escenario de simulación similar al de la sección anterior, donde,
+$\sigma_0 = 1$, $\phi_0 \in \lbrace -0.1 , -0.5, -0.9\rbrace$, $n \in \lbrace100, 5000, 1500\rbrace$ y $\Delta_n = \tau_n - \tau_{n-1} \sim 1 + poisson(\lambda = 2)$. En este caso solo simulamos muestras aleatorias con parametro negativo ya que es el foco de este estudio. En el caso del IAR, se asumen que 
+$\phi^{I} = 0$ (la parte imaginaria es cero) y que $c = 0$. Para comparar nuestro modelo con el CIAR, utilizaremos el \emph{Error cuadrático medio (ECM)}, que definiremos así
+
+$$ECM = \sqrt{\frac{\sum_{i=1}^{n}(e_i - \bar{e})^2}{n}}$$
+
+donde $e_i = X_{t_i} - \hat{X}_{\tau_i}$ para $i = 1, ..., n$.
+\begin{figure}[h]
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_IARvsCIAR.eps}
+    \caption{Comportamiento de la simulación, tomando como base el IAR.}
+    \label{fig:iarvsciar}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_CIARvsIAR.eps}
+    \caption{Comportamiento de la simulación, tomando como base el CIAR.}
+    \label{fig:ciarvsiar}
+    \end{minipage}
+\end{figure}
+
+la figura \ref{fig:iarvsciar} muestra el resultado de la simulacion de un IAR con las condiciones dadas, y estimando tanto  el IAR como el CIAR
+con los mismos datos simulados y midiendo el ECM de la predicción. Por otra parte la figura \ref{fig:ciarvsiar} muestra los mismos resultados pero esta vez,
+los datos fueron simulados a partir del CIAR.
+
+Esta simulacion permite llevarnos a la conclusión de que, cuando el parámetro $\phi_n \to -1$ el modelo IAR tiene un rendimiento mucho mejor en cuanto al ECM. 
+Por otra parte cuando el parámetro $\phi \to 0$ el CIAR presenta un mejor comportamiento, sobre todo en muestras grandes. Y cuando $phi$ esta al rededor de 0.5, el CIAR muestra
+un mejor rendimiento en muestras pequeñas, pero el IAR es mejor para muestras grandes, este comportamiento es identico tanto simulando IAR como CIAR.
+
+
 \section{Aplicación en datos de espeleotemas\protect\footnote{Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}
 
 Estos datos han sido descritos y trabajados por \cite{mudelse2014climate} en su libro y los hemos encontrado disponibles en la \href{https://www.manfredmudelsee.com/}{pagina web del autor}. Este conjunto de datos cuenta con 1345 datos donde se miden el pocentaje de 

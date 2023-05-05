@@ -24,7 +24,8 @@
 \contentsline {section}{\numberline {3.6}Estimación}{14}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Estimación Bootstrap}{15}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Estudio de Simulación Monte Carlo}{15}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Aplicación en datos de espeleotemas\footnote {Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}{20}{section.3.9}%
-\contentsline {chapter}{\numberline {4}Conclusion}{22}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Appendix}{23}{appendix.A}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{24}{appendix.A}%
+\contentsline {section}{\numberline {3.9}Comparación del Modelo IAR vs el CIAR}{20}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Aplicación en datos de espeleotemas\footnote {Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}{21}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Conclusion}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Appendix}{24}{appendix.A}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{25}{appendix.A}%

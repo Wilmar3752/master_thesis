@@ -71,7 +71,7 @@ calc_new_x <- function(innovations, w_n, phi_n) {
 iar_mle <- function(par = c(-0.99, 0.99),
                     fn = iar_loglik, data,
                     hessian = TRUE,
-                    method = "Nelder-Mead") {
+                    method = "L-BFGS-B", lower = c(-0.999,0.001), upper = c(0.999, Inf)) {
     p <- optim(par = c(par[1], abs(par[2])),
               fn = fn, x = data,
               hessian = hessian,

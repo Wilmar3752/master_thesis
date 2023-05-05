@@ -47,11 +47,19 @@ df_final_1$n <- factor(df_final_1$n)
 res_1 <- melt(df_final_1, id = c('phi', 'n'))
 res_1$n <- as.numeric(as.character(res_1$n))
 
+#checkpoint
+res_1 <- read.csv("./data/iarvsciar.csv")
+res_1$variable <- as.factor(res_1$variable)
+levels(res_1$variable) <- c("CIAR", "IAR")
+
+postscript("./../informe/Kap3/Fig_Cap3/sim4_IARvsCIAR.eps")
+
 ggplot(res_1, aes(x = variable, y = value)) +
 geom_boxplot() +
-facet_wrap(~ phi + n, scales = "free", nrow = 3,
-labeller = label_bquote(phi == .(phi)~","~"n="~.(paste(n))))
-
+facet_wrap(~ phi + n, nrow = 3,
+labeller = label_bquote(phi == .(phi)~","~"n="~.(paste(n))))+
+labs( y = 'ECM', x= 'Modelo')
+dev.off()
 #write.csv(res_1, './data/iarvsciar.csv')
 
 ## Simulando Ciar
@@ -82,10 +90,20 @@ df_final_2$n <- factor(df_final_2$n)
 
 res_2 <- melt(df_final_2, id = c('phi', 'n'))
 
+#checkpoint
+res_2 <- read.csv("./data/ciarvsiar.csv")
+res_2$variable <- as.factor(res_2$variable)
+
+levels(res_2$variable) <- c("CIAR", "IAR")
+
+postscript("./../informe/Kap3/Fig_Cap3/sim4_CIARvsIAR.eps")
 
 ggplot(res_2, aes(x = variable, y = value)) +
 geom_boxplot() +
-facet_wrap(~ phi + n, scales = "free", nrow = 3,
-    labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n))))
+facet_wrap(~ phi + n, nrow = 3,
+    labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n))))+
+labs(y = 'ECM', x= 'Modelo')
 
-write.csv(res_2, './data/ciarvsiar.csv')
+#write.csv(res_2, './data/ciarvsiar.csv')
+
+dev.off()
