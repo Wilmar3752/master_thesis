@@ -25,7 +25,6 @@ calc_xhat <- function(x, phi) {
   x_hat[2:n] <- sign(phi) * abs(phi)^(delta_n) * x$x[1:(n - 1)]
   return(x_hat)
 }
-
 calc_w <- function(delta_n, phi, sigma) {
   n <- length(delta_n) + 1
   w <- c()
@@ -34,21 +33,35 @@ calc_w <- function(delta_n, phi, sigma) {
   w[2:n] <- var * (1 - sign(phi)^(2) * abs(phi)^(2 * delta_n))
   return(w)
 }
+calc_w_fit <- function(x, phi) {
+  n <- nrow(x)
+  w <- c()
+  sigma <- calc_sigma(x, phi)
+  delta_n <- diff(x$t_n)
+  var <- (sigma) / (1 - phi^2)
+  w[1] <- var
+  w[2:n] <- var * (1 - sign(phi)^(2) * abs(phi)^(2 * delta_n))
+  return(w)
+}
+
 calc_phi_n <- function(phi, delta_n) {
   phi_n <- sign(phi) * abs(phi)^delta_n
   return(phi_n)
 }
-
-iar_loglik <- function(x, par) {
-  phi <- par[1]
-  sigma <- par[2]
-  n <- nrow(x)
+calc_sigma <- function(x, phi) {
   x_hat <- calc_xhat(x, phi)
   delta_n <- diff(x$t_n)
-  w <- calc_w(delta_n, phi, sigma)
-  ll <- (n / 2) * log(2 * pi) +
-        (1 / 2) * sum(log(w)) +
-        (1 / 2) * sum(((x$x - x_hat)^2) / w)
+  n <- nrow(x)
+  k <- (1 - phi^2) / n
+  e <- x$x - x_hat
+  sigma <- k * e[1]^2 + k * sum(e[2:n]^2 / (1 - (phi^2)^(delta_n)))
+  return(sigma)
+}
+
+
+iar_loglik <- function(x, phi) {
+  w <- calc_w_fit(x, phi)
+  ll <- (1 / 2) * sum(log(w))
   return(ll)
 }
 
@@ -68,22 +81,16 @@ calc_new_x <- function(innovations, w_n, phi_n) {
   return(x_new)
 }
 
-iar_mle <- function(par = c(-0.99, 0.99),
+iar_mle <- function(par = 0,
                     fn = iar_loglik, data,
                     hessian = TRUE,
-                    method = "L-BFGS-B", lower = c(-0.999,0.001), upper = c(0.999, Inf)) {
-    p <- optim(par = c(par[1], abs(par[2])),
-              fn = fn, x = data,
-              hessian = hessian,
-              method = method)
+                    method = "L-BFGS-B") {
+    p <-  optim(par = par,
+          fn = fn, x = data,
+          hessian = hessian,
+          method = 'Brent', lower = -0.99, upper = 0.99)
     par <- p$par
-    if (hessian == TRUE) {
-      stde <- sqrt(diag(solve(p$hessian)))
-      mle_list <- list("par" = par, "stde" = stde)
-    }else {
-      mle_list <- list("par" = par)#, "stde" = stde)
-    }
-    return(mle_list)
+    return(par)
 }
 
 iar_boot_est <- function(x, num_bootstrap_trayetories) {

@@ -2,10 +2,22 @@ source("utils.R")
 
 phi <- c(-0.1, -0.5, -0.9, 0.1, 0.5, 0.9)
 sigma <- 1
-n_sim <- 1000
+n_sim <- 100
+phi <- -0.8
+
 #sim <- read.csv("val_data.csv")
 
 sim <- iar_sim(n_sim, phi, sigma)
+#sim
+calc_sigma(sim, 0.5)
+iar_loglik(sim, 0.5)
+#calc_w_fit(sim, 0.5)
+
+
+optim(par = 0,
+    fn = iar_loglik, x = sim,
+    hessian = TRUE,
+    method = 'Brent', lower = -0.99, upper = 0.99)
 #sim
 p <- iar_mle(par = c(-0.99, 0.99), fn = iar_loglik, data = sim, hessian = TRUE)
 p

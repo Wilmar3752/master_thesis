@@ -1,109 +1,160 @@
 source("utils.R")
 library(iAR)
+
+
 library(reshape2)
 library(ggplot2)
 ## simulando IAR
-sim <- iar_sim(10, phi = -0.4)
 
-ciar_sim <- function(sim) {
-    ciar <- CIARkalman(sim$x, sim$t_n)
-    yhat <- CIARfit(phiValues = c(ciar$phiR, ciar$phiI), y = sim$x, t = sim$t_n)
-    e <- sim$x - yhat$yhat
+
+ciar_sim <- function(x) {
+    ciar <- CIARkalman(x$x, x$t_n)
+    yhat <- CIARfit(phiValues = c(ciar$phiR, ciar$phiI), y = x$x, t = x$t_n)
+    e <- x$x - yhat$yhat
     ecm <- sqrt(mean(e^2))
-return(ecm)
+return(c(ciar$phiR, ecm))
 }
 
-iar_simc <- function(sim) {
-    pars <- iar_mle(data = sim)
-    pred <- calc_xhat(sim, pars$par[1])
-    e <- sim$x - pred
+iar_simc <- function(x) {
+    pars <- iar_mle(data = x)
+    pred <- calc_xhat(x, pars)
+    e <- x$x - pred
     ecm <- sqrt(mean(e^2))
-return(ecm)
+return(c(pars, ecm))
 }
 
-n <- c(100, 500, 1500)
-phi <- c(-0.1, -0.5, -0.9)
+sim_results <- function(x){
+    iar<- iar_simc(x)
+    ciar <- ciar_sim(x)
+return(c(iar,ciar))
+}
 
-ecm_ciar <- 0
-ecm_iar <- 0
-df_final_1 <- data.frame()
-for (n in n){
-    for (p in phi){
+n_list <- c(100, 500, 1500)
+phi_list <- c(-0.1, -0.5, -0.9)
+df_final <- data.frame()
+resultados <- list()
+sim <- data.frame()
+final_res <- data.frame()
+for (n in n_list){
+    for (p in phi_list){
         for (i in 1:1000){
-        sim <- iar_sim(n_sim = n, phi = p)
-        ecm_ciar[i] <- ciar_sim(sim)
-        ecm_iar[i] <- iar_simc(sim)
+            sim <- iar_sim(n_sim = n, phi = p)
+            resultados[[i]] <- sim
         }
-    df_sim <- data.frame(cbind(ecm_ciar, ecm_iar))
-    df_sim$phi <- p
-    df_sim$n <- n
-    df_final_1 <- rbind(df_final_1, df_sim)
+    final_res <- lapply(resultados, sim_results)
+    final_res <- data.frame(do.call(rbind, final_res))
+    final_res$n <- n
+    final_res$p <- p
+   df_final <- rbind(df_final, final_res)
     }
 }
+colnames(df_final) <- c("phi_iar", "ecm_iar","phi_ciar", "ecm_ciar", "n", "phi")
 
-head(df_final_1)
-df_final_1$n <- factor(df_final_1$n)
+df_final$n <- factor(df_final$n)
 
-res_1 <- melt(df_final_1, id = c('phi', 'n'))
+res_1 <- melt(df_final, id = c("phi", "n"))
 res_1$n <- as.numeric(as.character(res_1$n))
 
 #checkpoint
+write.csv(res_1, "./data/iarvsciar.csv")
 res_1 <- read.csv("./data/iarvsciar.csv")
 res_1$variable <- as.factor(res_1$variable)
-levels(res_1$variable) <- c("CIAR", "IAR")
+#levels(res_1$variable) <- c("CIAR", "IAR")
+
+postscript("./../informe/Kap3/Fig_Cap3/sim4_IARvsCIARphi.eps")
+
+ggplot(res_1[res_1$variable %in% c("phi_iar", "phi_ciar"), ],
+        aes(x = variable, y = value)) +
+geom_boxplot() +
+facet_wrap(~ phi + n, nrow = 3,
+labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n)))) +
+labs(y = "Phi", x = "Modelo")
+dev.off()
 
 postscript("./../informe/Kap3/Fig_Cap3/sim4_IARvsCIAR.eps")
 
-ggplot(res_1, aes(x = variable, y = value)) +
+ggplot(res_1[res_1$variable %in% c("ecm_iar", "ecm_ciar"), ],
+        aes(x = variable, y = value)) +
 geom_boxplot() +
 facet_wrap(~ phi + n, nrow = 3,
-labeller = label_bquote(phi == .(phi)~","~"n="~.(paste(n))))+
-labs( y = 'ECM', x= 'Modelo')
+labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n)))) +
+labs(y = "ECM", x = "Modelo")
 dev.off()
-#write.csv(res_1, './data/iarvsciar.csv')
+#write.csv(res_1, "./data/iarvsciar.csv")
 
 ## Simulando Ciar
-n <- c(100, 500, 1500)
-phi <- c(-0.1, -0.5, -0.9)
-
-ecm_ciar <- 0
-ecm_iar <- 0
-df_final_2 <- data.frame()
-for (n in n){
-    for (p in phi){
+n_list <- c(100, 500, 1500)
+phi_list <- c(-0.1, -0.5, -0.9)
+df_final2 <- data.frame()
+resultados2 <- list()
+sim2 <- data.frame()
+final_res2 <- data.frame()
+for (n in n_list){
+    for (p in phi_list){
         for (i in 1:1000){
-        sim <- iar_sim(n_sim = n, phi = p)
-        sim$x < CIARsample(n = n, phiR = p, phiI = 0, st = sim$t_n)$y
-        ecm_ciar[i] <- ciar_sim(sim)
-        ecm_iar[i] <- iar_simc(sim)
+            t_n <- iar_sim(n)$t_n
+            CIAR <- CIARsample(n = n, phiR = p, phiI = 0, st = t_n)
+            sim2 <- data.frame(cbind(CIAR$y, CIAR$t))
+            colnames(sim2) <- c("x", "t_n")
+            resultados2[[i]] <- sim2
         }
-    df_sim <- data.frame(cbind(ecm_ciar, ecm_iar))
-    df_sim$phi <- p
-    df_sim$n <- n
-    df_final_2 <- rbind(df_final_2, df_sim)
+    final_res2 <- lapply(resultados2, sim_results)
+    final_res2 <- data.frame(do.call(rbind, final_res2))
+    final_res2$n <- n
+    final_res2$p <- p
+   df_final2 <- rbind(df_final2, final_res2)
     }
 }
+resultados2
+df_final2
 
-head(df_final_2)
+colnames(df_final2) <- c("phi_iar", "ecm_iar","phi_ciar", "ecm_ciar", "n", "phi")
 
-df_final_2$n <- factor(df_final_2$n)
+df_final2$n <- factor(df_final2$n)
 
-res_2 <- melt(df_final_2, id = c('phi', 'n'))
+res_2 <- melt(df_final2, id = c("phi", "n"))
+res_2$n <- as.numeric(as.character(res_2$n))
 
 #checkpoint
+write.csv(res_2, "./data/ciarvsiar.csv")
 res_2 <- read.csv("./data/ciarvsiar.csv")
 res_2$variable <- as.factor(res_2$variable)
 
-levels(res_2$variable) <- c("CIAR", "IAR")
+#levels(res_2$variable) <- c("CIAR", "IAR")
+
+postscript("./../informe/Kap3/Fig_Cap3/sim4_CIARvsIARphi.eps")
+
+ggplot(res_2[res_2$variable %in% c("phi_iar", "phi_ciar"), ],
+        aes(x = variable, y = value)) +
+geom_boxplot() +
+facet_wrap(~ phi + n, nrow = 3,
+labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n)))) +
+labs(y = "Phi", x = "Modelo")
+
+dev.off()
 
 postscript("./../informe/Kap3/Fig_Cap3/sim4_CIARvsIAR.eps")
 
-ggplot(res_2, aes(x = variable, y = value)) +
+ggplot(res_2[res_2$variable %in% c("ecm_iar", "ecm_ciar"), ],
+        aes(x = variable, y = value)) +
 geom_boxplot() +
 facet_wrap(~ phi + n, nrow = 3,
-    labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n))))+
-labs(y = 'ECM', x= 'Modelo')
-
-#write.csv(res_2, './data/ciarvsiar.csv')
-
+labeller = label_bquote(phi == .(phi) ~ "," ~ "n=" ~ .(paste(n)))) +
+labs(y = "ECM", x = "Modelo")
 dev.off()
+
+# Crear una lista de listas con tres elementos cada una
+# Crear la lista original
+t_n <- iar_sim(100)$t_n
+sim2 <- data.frame()
+CIAR <- CIARsample(n = 100, phiR = -0.5, phiI = 0, st = t_n)
+
+CIARkalman(y = CIAR$y, t = CIAR$t)
+sim2 <- data.frame(cbind(CIAR$y, CIAR$t))
+colnames(sim2) <- c('x', 't_n')
+
+sim_results(sim2)
+
+
+head(resultados2[12])
+
