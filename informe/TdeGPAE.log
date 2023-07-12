@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  22 MAY 2023 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.25)  15 JUN 2023 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,16 +8,7 @@ entering extended mode
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./EncabezadoPAE.tex (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
-File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
-\mathindent=\skip47
-Applying: [2015/01/01] Make \[ robust on input line 50.
-LaTeX Info: Redefining \[ on input line 51.
-Already applied: [0000/00/00] Make \[ robust on input line 62.
-Applying: [2015/01/01] Make \] robust on input line 74.
-LaTeX Info: Redefining \] on input line 75.
-Already applied: [0000/00/00] Make \] robust on input line 83.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -29,8 +20,8 @@ File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count191
 \c@figure=\count192
 \c@table=\count193
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
 \bibindent=\dimen138
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/01/26 3.70 The Babel package
@@ -76,7 +67,7 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfysize=\dimen143
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -123,8 +114,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen151
 \lineht@=\dimen152
 \@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
@@ -135,9 +126,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks26
 \thm@notefont=\toks27
 \thm@headpunct=\toks28
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
 \dth@everypar=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -150,8 +141,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip56
-\bibsep=\skip57
+\bibhang=\skip55
+\bibsep=\skip56
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count274
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
@@ -162,8 +153,8 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box52
 \extrarowheight=\dimen154
 \NC@list=\toks30
-\extratabsurround=\skip58
-\backup@length=\skip59
+\extratabsurround=\skip57
+\backup@length=\skip58
 \ar@cellbox=\box53
 )
 \TX@col@width=\dimen155
@@ -175,10 +166,10 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \TX@ftn=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
 \LTchunksize=\count276
 \LTcapwidth=\dimen160
 \LT@head=\box54
@@ -193,9 +184,9 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@p@ftn=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip64
+\multirow@colwidth=\skip63
 \multirow@cntb=\count281
-\multirow@dima=\skip65
+\multirow@dima=\skip64
 \bigstrutjot=\dimen161
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
@@ -206,7 +197,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 227.
  (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks33
-\minrowclearance=\skip66
+\minrowclearance=\skip65
 )
 \rownum=\count282
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
@@ -322,7 +313,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip67
+\Hy@SectionHShift=\skip66
 ) (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
  (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
@@ -625,20 +616,20 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@width=\dimen166
 ) (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip68
-\RaggedLeftLeftskip=\skip69
-\RaggedRightLeftskip=\skip70
-\CenteringRightskip=\skip71
-\RaggedLeftRightskip=\skip72
-\RaggedRightRightskip=\skip73
-\CenteringParfillskip=\skip74
-\RaggedLeftParfillskip=\skip75
-\RaggedRightParfillskip=\skip76
-\JustifyingParfillskip=\skip77
-\CenteringParindent=\skip78
-\RaggedLeftParindent=\skip79
-\RaggedRightParindent=\skip80
-\JustifyingParindent=\skip81
+\CenteringLeftskip=\skip67
+\RaggedLeftLeftskip=\skip68
+\RaggedRightLeftskip=\skip69
+\CenteringRightskip=\skip70
+\RaggedLeftRightskip=\skip71
+\RaggedRightRightskip=\skip72
+\CenteringParfillskip=\skip73
+\RaggedLeftParfillskip=\skip74
+\RaggedRightParfillskip=\skip75
+\JustifyingParfillskip=\skip76
+\CenteringParindent=\skip77
+\RaggedLeftParindent=\skip78
+\RaggedRightParindent=\skip79
+\JustifyingParindent=\skip80
 )
 \c@theorem=\count297
 \c@lemma=\count298
@@ -651,14 +642,7 @@ File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box60
-) (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux
-
-LaTeX Warning: Label `fig:example' multiply defined.
-
-
-LaTeX Warning: Label `fig:example_delta' multiply defined.
-
-) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
+) (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux))
 \openout1 = `TdeGPAE.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 7.
@@ -744,29 +728,26 @@ Package pdftex.def Info: HojaTitulo/Fig_HojaTitulo/Univalle.jpg  used on input l
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./HojaTitulo/Fig_HojaTitulo/Univalle.jpg>] [2
 
-] [3]
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 78.
+] [3] [4] [5
+
+] [6]) (./TdeGPAE.toc
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 78.
+LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 78.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
-) [4] [5
+) [7
 
-] [6
-
-] [7] [8
-
-]) (./TdeGPAE.toc [9
 
 
 
@@ -774,17 +755,17 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 \tf@toc=\write4
 \openout4 = `TdeGPAE.toc'.
 
- [10] (./TdeGPAE.lof)
+ [8] (./TdeGPAE.lof)
 \tf@lof=\write5
 \openout5 = `TdeGPAE.lof'.
 
- [11
+ [9
 
 ] (./TdeGPAE.lot)
 \tf@lot=\write6
 \openout6 = `TdeGPAE.lot'.
 
- [12
+ [10
 
 ]
 \openout2 = `Introduccion/IntroduccionPAE.aux'.
@@ -816,7 +797,7 @@ File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
 
  (./Kap2/Cap2.tex
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 14.
+LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 8.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyd.fd
 File: ujkpsyd.fd 2006/08/15 v1.0
 ) [3
@@ -825,17 +806,17 @@ File: ujkpsyd.fd 2006/08/15 v1.0
 
 
 ] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
@@ -845,17 +826,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--162
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
@@ -906,24 +882,21 @@ Overfull \hbox (81.86076pt too wide) has occurred while \output is active
  []
 
 [12] [13]
-
-LaTeX Warning: Reference `section:Bootstrap' on page 14 undefined on input line 208.
-
-
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 14 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
 [14]
-Overfull \hbox (6.96085pt too wide) in paragraph at lines 213--217
+Overfull \hbox (6.96085pt too wide) in paragraph at lines 232--236
 \OT1/jkp/m/n/12 para $\OML/jkp/m/it/12 n \OT1/jkp/m/n/12 = 2\OML/jkp/m/it/12 ; [] ; \OT1/jkp/m/n/12 N$. El lla-mado re-muestreo basado en el mod-elo podr[]^^Pa pro-ceder por muestreo
  []
 
 
-Overfull \hbox (11.9545pt too wide) in paragraph at lines 213--217
+Overfull \hbox (11.9545pt too wide) in paragraph at lines 232--236
 \OT1/jkp/m/n/12 equiprob-a-ble con reem-plazo de los resid-uos cen-tra-dos $\OML/jkp/m/it/12 e[] \OMS/jkp/m/n/12 ^^@ []\OML/jkp/m/it/12 ; [] ; e[] \OMS/jkp/m/n/12 ^^@ []$\OT1/jkp/m/n/12 , donde $[] = [][] \OML/jkp/m/it/12 e[]=\OT1/jkp/m/n/12 N \OMS/jkp/m/n/12 ^^@
  []
 
+[15]
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim1.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 39895 bytes
@@ -931,16 +904,13 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim1.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 20426 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Kap3/Fig_Cap3/sim1.eps>
-(epstopdf)             \includegraphics on input line 237.
+(epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=407, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim1-eps-converted-to.pdf, id=413, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim1-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 237.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim1-eps-converted-to.pdf  used on input line 257.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim22.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 40026 bytes
@@ -948,17 +918,18 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim22.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 19911 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Kap3/Fig_Cap3/sim22.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=408, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim22-eps-converted-to.pdf, id=414, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim22-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 243.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim22-eps-converted-to.pdf  used on input line 263.
 (pdftex.def)             Requested size: 281.68513pt x 406.13976pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15]
+
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 \OT1/jkp/m/n/12 16 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
@@ -967,8 +938,14 @@ Overfull \hbox (81.86076pt too wide) has occurred while \output is active
 <Kap3/Fig_Cap3/4RzQZ8xYXY.pdf, id=448, 887.315pt x 578.16pt>
 File: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf  used on input line 279.
+Package pdftex.def Info: Kap3/Fig_Cap3/4RzQZ8xYXY.pdf  used on input line 299.
 (pdftex.def)             Requested size: 422.52054pt x 248.20294pt.
+
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 18 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[18 <./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>]
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim3.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 126876 bytes
@@ -976,15 +953,15 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim3.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 46861 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim3-eps-converted-to.pdf Kap3/Fig_Cap3/sim3.eps>
-(epstopdf)             \includegraphics on input line 302.
+(epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim3-eps-converted-to.pdf, id=453, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim3-eps-converted-to.pdf, id=460, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim3-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf  used on input line 302.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim3-eps-converted-to.pdf  used on input line 322.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 302--303
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 322--323
 [][] 
  []
 
@@ -995,35 +972,32 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4.eps>
 (epstopdf)                    date: 2023-03-28 20:57:24
 (epstopdf)                    size: 47015 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4-eps-converted-to.pdf Kap3/Fig_Cap3/sim4.eps>
-(epstopdf)             \includegraphics on input line 308.
+(epstopdf)             \includegraphics on input line 328.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4-eps-converted-to.pdf, id=454, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4-eps-converted-to.pdf, id=461, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf  used on input line 308.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4-eps-converted-to.pdf  used on input line 328.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 308--309
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 328--329
 [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (42.6947pt too wide) in paragraph at lines 317--345
+Overfull \hbox (42.6947pt too wide) in paragraph at lines 337--365
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[19 <./Kap3/Fig_Cap3/sim3-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>]
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 18 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+\OT1/jkp/m/n/12 20 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[18 <./Kap3/Fig_Cap3/4RzQZ8xYXY.pdf>] [19 <./Kap3/Fig_Cap3/sim3-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4-eps-converted-to.pdf>]
+[20]
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_IARvsCIAR.eps>
 (epstopdf)                    date: 2023-05-17 07:46:42
 (epstopdf)                    size: 33139 bytes
@@ -1031,15 +1005,15 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_IARvsCIAR.eps>
 (epstopdf)                    date: 2023-05-17 07:47:19
 (epstopdf)                    size: 23792 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf Kap3/Fig_Cap3/sim4_IARvsCIAR.eps>
-(epstopdf)             \includegraphics on input line 361.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf, id=492, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf, id=495, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf  used on input line 361.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf  used on input line 381.
 (pdftex.def)             Requested size: 158.44519pt x 228.45053pt.
 
-Overfull \hbox (17.19026pt too wide) in paragraph at lines 361--362
+Overfull \hbox (17.19026pt too wide) in paragraph at lines 381--382
 [][] 
  []
 
@@ -1050,15 +1024,15 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_CIARvsIAR.eps>
 (epstopdf)                    date: 2023-05-18 15:28:06
 (epstopdf)                    size: 22837 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf Kap3/Fig_Cap3/sim4_CIARvsIAR.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf, id=493, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf, id=496, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf  used on input line 367.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf  used on input line 387.
 (pdftex.def)             Requested size: 158.44519pt x 228.45053pt.
 
-Overfull \hbox (17.19026pt too wide) in paragraph at lines 367--368
+Overfull \hbox (17.19026pt too wide) in paragraph at lines 387--388
 [][] 
  []
 
@@ -1069,21 +1043,16 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_IARvsCIARphi.eps>
 (epstopdf)                    date: 2023-05-18 15:32:44
 (epstopdf)                    size: 25219 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf Kap3/Fig_Cap3/sim4_IARvsCIARphi.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 395.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf, id=494, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf, id=497, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf  used on input line 375.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf  used on input line 395.
 (pdftex.def)             Requested size: 158.44519pt x 228.45053pt.
 
-Overfull \hbox (17.19026pt too wide) in paragraph at lines 375--376
+Overfull \hbox (17.19026pt too wide) in paragraph at lines 395--396
 [][] 
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 376--376
-\OT1/jkp/m/n/12 u-laci[]on, tomando como base el IAR
  []
 
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_CIARvsIARphi.eps>
@@ -1093,29 +1062,33 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/sim4_CIARvsIARphi.eps>
 (epstopdf)                    date: 2023-05-18 15:32:21
 (epstopdf)                    size: 30443 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf Kap3/Fig_Cap3/sim4_CIARvsIARphi.eps>
-(epstopdf)             \includegraphics on input line 381.
+(epstopdf)             \includegraphics on input line 401.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf, id=495, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf, id=498, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf  used on input line 381.
+Package pdftex.def Info: Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf  used on input line 401.
 (pdftex.def)             Requested size: 158.44519pt x 228.45053pt.
 
-Overfull \hbox (17.19026pt too wide) in paragraph at lines 381--382
+Overfull \hbox (17.19026pt too wide) in paragraph at lines 401--402
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 20 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
- []
-
-[20
+[21
 
  <./Kap3/Fig_Cap3/sim4_IARvsCIAR-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4_CIARvsIAR-eps-converted-to.pdf>]
+Overfull \hbox (81.86076pt too wide) has occurred while \output is active
+\OT1/jkp/m/n/12 22 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+ []
+
+[22 <./Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf>]
+Overfull \hbox (30.02304pt too wide) in paragraph at lines 417--419
+\OT1/jkp/m/n/12 en-er-gia en er-gios que llega por $\OML/jkp/m/it/12 cm[]$ \OT1/jkp/m/n/12 en un an-cho de banda de un Am-strong $(10[]\OML/jkp/m/it/12 ergs=s=cm[]=A\OT1/jkp/m/n/12 )$
+ []
+
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_data.eps>
 (epstopdf)                    date: 2023-05-22 13:51:57
 (epstopdf)                    size: 22008 bytes
@@ -1123,176 +1096,226 @@ Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_data.eps>
 (epstopdf)                    date: 2023-05-22 13:56:26
 (epstopdf)                    size: 29244 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf Kap3/Fig_Cap3/agn_data.eps>
-(epstopdf)             \includegraphics on input line 401.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf, id=524, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf, id=559, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf  used on input line 401.
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf  used on input line 422.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 401--402
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 422--423
 [][] 
  []
 
 Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_loess.eps>
-(epstopdf)                    date: 2023-05-22 13:56:03
-(epstopdf)                    size: 10583 bytes
+(epstopdf)                    date: 2023-05-24 07:08:38
+(epstopdf)                    size: 10721 bytes
 (epstopdf)             Output file: <Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-05-22 13:56:27
-(epstopdf)                    size: 15023 bytes
+(epstopdf)                    date: 2023-05-24 07:08:40
+(epstopdf)                    size: 14589 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf Kap3/Fig_Cap3/agn_loess.eps>
-(epstopdf)             \includegraphics on input line 407.
+(epstopdf)             \includegraphics on input line 428.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf, id=525, 561.09625pt x 809.0225pt>
+<Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf, id=560, 561.09625pt x 809.0225pt>
 File: Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf Graphic file (type pdf)
 <use Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf  used on input line 407.
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf  used on input line 428.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 407--408
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 428--429
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 415.
-
-[21 <./Kap3/Fig_Cap3/sim4_IARvsCIARphi-eps-converted-to.pdf> <./Kap3/Fig_Cap3/sim4_CIARvsIARphi-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_original.eps>
-(epstopdf)                    date: 2023-04-12 19:38:07
-(epstopdf)                    size: 40960 bytes
-(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-04-12 19:38:08
-(epstopdf)                    size: 24627 bytes
-(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_original.eps>
-(epstopdf)             \includegraphics on input line 427.
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_detrend.eps>
+(epstopdf)                    date: 2023-05-22 14:06:45
+(epstopdf)                    size: 22111 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-05-24 06:54:58
+(epstopdf)                    size: 28893 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf Kap3/Fig_Cap3/agn_detrend.eps>
+(epstopdf)             \includegraphics on input line 434.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf, id=561, 561.09625pt x 809.0225pt>
-File: Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf Graphic file (type pdf)
-<use Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf  used on input line 427.
+<Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf, id=561, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf  used on input line 434.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 427--428
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 434--435
 [][] 
  []
 
-Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_delta.eps>
-(epstopdf)                    date: 2023-04-12 19:37:42
-(epstopdf)                    size: 21754 bytes
-(epstopdf)             Output file: <Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-04-12 19:37:55
-(epstopdf)                    size: 16321 bytes
-(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf Kap3/Fig_Cap3/example_delta.eps>
-(epstopdf)             \includegraphics on input line 433.
+
+Underfull \hbox (badness 1762) in paragraph at lines 435--435
+[]\OT1/jkp/m/n/12 Figure \OT1/jkp/b/n/12 3-12\OT1/jkp/m/n/12 : []Residuales del mod-elo
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_ajuste.eps>
+(epstopdf)                    date: 2023-05-27 09:15:47
+(epstopdf)                    size: 19508 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-05-27 09:15:48
+(epstopdf)                    size: 15131 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf Kap3/Fig_Cap3/agn_ajuste.eps>
+(epstopdf)             \includegraphics on input line 440.
 Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf, id=562, 561.09625pt x 809.0225pt>
-File: Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf Graphic file (type pdf)
-<use Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf  used on input line 433.
+<Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf, id=562, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf  used on input line 440.
 (pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
 
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 433--434
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 440--441
 [][] 
  []
+
+[23 <./Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_detrend-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_ajuste-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_ajuste_bandas.eps>
+(epstopdf)                    date: 2023-06-06 07:27:04
+(epstopdf)                    size: 25885 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-06-06 07:29:04
+(epstopdf)                    size: 17606 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf Kap3/Fig_Cap3/agn_ajuste_bandas.eps>
+(epstopdf)             \includegraphics on input line 452.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf, id=603, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf  used on input line 452.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 452--453
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+[]\OT1/jkp/m/n/12 Figure \OT1/jkp/b/n/12 3-14\OT1/jkp/m/n/12 : []Comportamiento de
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 453--453
+\OT1/jkp/m/n/12 las predic-ciones y su in-ter-valo de
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_qqplot.eps>
+(epstopdf)                    date: 2023-05-29 08:24:52
+(epstopdf)                    size: 10375 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-05-29 08:25:14
+(epstopdf)                    size: 28236 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf Kap3/Fig_Cap3/agn_qqplot.eps>
+(epstopdf)             \includegraphics on input line 458.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf, id=604, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf  used on input line 458.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 458--459
+[][] 
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_acf.eps>
+(epstopdf)                    date: 2023-05-29 08:26:06
+(epstopdf)                    size: 5390 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-05-29 08:26:29
+(epstopdf)                    size: 11667 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf Kap3/Fig_Cap3/agn_acf.eps>
+(epstopdf)             \includegraphics on input line 464.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf, id=605, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf  used on input line 464.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 464--465
+[][] 
+ []
+
+Package epstopdf Info: Source file: <Kap3/Fig_Cap3/agn_ljung.eps>
+(epstopdf)                    date: 2023-05-29 09:09:04
+(epstopdf)                    size: 10165 bytes
+(epstopdf)             Output file: <Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-05-29 09:09:25
+(epstopdf)                    size: 27445 bytes
+(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf Kap3/Fig_Cap3/agn_ljung.eps>
+(epstopdf)             \includegraphics on input line 470.
+Package epstopdf Info: Output file is already uptodate.
+<Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf, id=606, 561.09625pt x 809.0225pt>
+File: Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf Graphic file (type pdf)
+<use Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf>
+Package pdftex.def Info: Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf  used on input line 470.
+(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
+
+Overfull \hbox (32.42358pt too wide) in paragraph at lines 470--471
+[][] 
+ []
+
+
+Underfull \vbox (badness 1838) has occurred while \output is active []
 
 
 Overfull \hbox (81.86076pt too wide) has occurred while \output is active
-\OT1/jkp/m/n/12 22 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
+\OT1/jkp/m/n/12 24 \OT1/jkp/m/sl/12 CHAPTER 3.  MODELO AUTORREGRESIVO DE PRIMER ORDEN IRREGULARMENTE ESPACIADO
  []
 
-[22 <./Kap3/Fig_Cap3/agn_data-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_loess-eps-converted-to.pdf> <./Kap3/Fig_Cap3/example_data_original-eps-converted-to.pdf> <./Kap3/Fig_Cap3/example_delta-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_original_estimation.eps>
-(epstopdf)                    date: 2023-04-13 07:34:47
-(epstopdf)                    size: 40308 bytes
-(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-04-13 07:34:48
-(epstopdf)                    size: 23931 bytes
-(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_original_estimation.eps>
-(epstopdf)             \includegraphics on input line 456.
-Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf, id=603, 561.09625pt x 809.0225pt>
-File: Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf Graphic file (type pdf)
-<use Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf  used on input line 456.
-(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
-
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 456--457
-[][] 
- []
-
-Package epstopdf Info: Source file: <Kap3/Fig_Cap3/example_data_diff_estimation.eps>
-(epstopdf)                    date: 2023-04-12 20:04:05
-(epstopdf)                    size: 39844 bytes
-(epstopdf)             Output file: <Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-04-12 20:04:35
-(epstopdf)                    size: 23031 bytes
-(epstopdf)             Command: <repstopdf --outfile=Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf Kap3/Fig_Cap3/example_data_diff_estimation.eps>
-(epstopdf)             \includegraphics on input line 462.
-Package epstopdf Info: Output file is already uptodate.
-<Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf, id=604, 561.09625pt x 809.0225pt>
-File: Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf Graphic file (type pdf)
-<use Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>
-Package pdftex.def Info: Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf  used on input line 462.
-(pdftex.def)             Requested size: 169.00885pt x 243.68385pt.
-
-Overfull \hbox (32.42358pt too wide) in paragraph at lines 462--463
-[][] 
- []
-
-) [23 <./Kap3/Fig_Cap3/example_data_original_estimation-eps-converted-to.pdf> <./Kap3/Fig_Cap3/example_data_diff_estimation-eps-converted-to.pdf>]
+[24 <./Kap3/Fig_Cap3/agn_ajuste_bandas-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_qqplot-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_acf-eps-converted-to.pdf> <./Kap3/Fig_Cap3/agn_ljung-eps-converted-to.pdf>]) [25]
 \openout2 = `Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux'.
 
  (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.tex
 Chapter 4.
-) [24
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+) [26
 
 
 
 
-]
-\openout2 = `Anexos/AnexosPAE.aux'.
-
- (./Anexos/AnexosPAE.tex
-Appendix A.
-) [25
+] (./TdeGPAE.bbl [27
 
 
 
-
-] (./TdeGPAE.bbl [26
-
-
-
-]) [27] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux) (./Anexos/AnexosPAE.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+]) [28] (./TdeGPAE.aux (./HojaTitulo/HojaTituloPAE.aux) (./Introduccion/IntroduccionPAE.aux) (./Kap2/Cap2.aux) (./Kap3/Cap3.aux) (./Conclusiones_Recomendaciones/Conclusiones_RecomendacionesPAE.aux))
 Package rerunfilecheck Info: File `TdeGPAE.out' has not changed.
-(rerunfilecheck)             Checksum: E80AF4C4CCBB6963764CD10909A46433;7486.
+(rerunfilecheck)             Checksum: B02D9B7ACDA4153FC42212CE890F17A6;6076.
  ) 
 Here is how much of TeX's memory you used:
- 13552 strings out of 478287
- 213446 string characters out of 5849289
- 539840 words of memory out of 5000000
- 31300 multiletter control sequences out of 15000+600000
- 519013 words of font info for 140 fonts, out of 8000000 for 9000
+ 13497 strings out of 478287
+ 212184 string characters out of 5849289
+ 535607 words of memory out of 5000000
+ 31259 multiletter control sequences out of 15000+600000
+ 506014 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,15n,66p,2053b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
-
+ 65i,18n,66p,1026b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on TdeGPAE.pdf (39 pages, 694689 bytes).
+Output written on TdeGPAE.pdf (38 pages, 737419 bytes).
 PDF statistics:
- 731 PDF objects out of 1000 (max. 8388607)
- 603 compressed objects within 7 object streams
- 134 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

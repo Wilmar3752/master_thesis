@@ -5,17 +5,18 @@
 \contentsline {figure}{\numberline {\textbf {3-1}}{\ignorespaces simulación del modelo IAR con coeficientes positivos}}{16}{figure.3.1}%
 \contentsline {figure}{\numberline {\textbf {3-2}}{\ignorespaces simulación del modelo IAR con coeficientes negativos}}{17}{figure.3.2}%
 \contentsline {figure}{\numberline {\textbf {3-3}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{18}{figure.3.3}%
-\contentsline {figure}{\numberline {\textbf {3-4}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{19}{figure.3.4}%
-\contentsline {figure}{\numberline {\textbf {3-5}}{\ignorespaces Esquema general del estudio de Monte Carlo.}}{19}{figure.3.5}%
-\contentsline {figure}{\numberline {\textbf {3-6}}{\ignorespaces Comportamiento de la simulación, tomando como base el IAR.}}{20}{figure.3.6}%
-\contentsline {figure}{\numberline {\textbf {3-7}}{\ignorespaces Comportamiento de la simulación, tomando como base el CIAR.}}{20}{figure.3.7}%
-\contentsline {figure}{\numberline {\textbf {3-8}}{\ignorespaces Comportamiento de la simulación, tomando como base el IAR Valor de $\phi $ estimado.}}{21}{figure.3.8}%
-\contentsline {figure}{\numberline {\textbf {3-9}}{\ignorespaces Comportamiento de la simulación, tomando como base el CIAR Valor de $\phi $ estimado.}}{21}{figure.3.9}%
-\contentsline {figure}{\numberline {\textbf {3-10}}{\ignorespaces Comportamiento de la serie de tiempo.}}{22}{figure.3.10}%
-\contentsline {figure}{\numberline {\textbf {3-11}}{\ignorespaces Comportamiento del $\Delta _n$ de la serie.}}{22}{figure.3.11}%
-\contentsline {figure}{\numberline {\textbf {3-12}}{\ignorespaces Comportamiento de la serie de tiempo.}}{22}{figure.3.12}%
-\contentsline {figure}{\numberline {\textbf {3-13}}{\ignorespaces Comportamiento del $\Delta _n$ de la serie.}}{22}{figure.3.13}%
-\contentsline {figure}{\numberline {\textbf {3-14}}{\ignorespaces Comportamiento del modelo estimado con la serie original.}}{23}{figure.3.14}%
-\contentsline {figure}{\numberline {\textbf {3-15}}{\ignorespaces Comportamiento del modelo estimado con la serie diferenciada.}}{23}{figure.3.15}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\textbf {3-4}}{\ignorespaces Resultados estimacion por máxima verosimilitud.}}{19}{figure.3.4}%
+\contentsline {figure}{\numberline {\textbf {3-5}}{\ignorespaces Resultados estimacion Boostrap.}}{19}{figure.3.5}%
+\contentsline {figure}{\numberline {\textbf {3-6}}{\ignorespaces Comportamiento de la simulación, tomando como base el IAR. ECM}}{21}{figure.3.6}%
+\contentsline {figure}{\numberline {\textbf {3-7}}{\ignorespaces Comportamiento de la simulación, tomando como base el CIAR. ECM}}{21}{figure.3.7}%
+\contentsline {figure}{\numberline {\textbf {3-8}}{\ignorespaces Comportamiento de la simulación, tomando como base el IAR. $\phi $}}{22}{figure.3.8}%
+\contentsline {figure}{\numberline {\textbf {3-9}}{\ignorespaces Comportamiento de la simulación, tomando como base el CIAR. $\phi $}}{22}{figure.3.9}%
+\contentsline {figure}{\numberline {\textbf {3-10}}{\ignorespaces Comportamiento de la serie de tiempo original.}}{23}{figure.3.10}%
+\contentsline {figure}{\numberline {\textbf {3-11}}{\ignorespaces Ajuste del modelo Loess.}}{23}{figure.3.11}%
+\contentsline {figure}{\numberline {\textbf {3-12}}{\ignorespaces Residuales del modelo Loess (eliminando tendencias).}}{23}{figure.3.12}%
+\contentsline {figure}{\numberline {\textbf {3-13}}{\ignorespaces Ajuste del modelo IAR a la serie transformada .}}{23}{figure.3.13}%
+\contentsline {figure}{\numberline {\textbf {3-14}}{\ignorespaces Comportamiento de las predicciones y su intervalo de predicción.}}{24}{figure.3.14}%
+\contentsline {figure}{\numberline {\textbf {3-15}}{\ignorespaces qqplot de los residuos del modelo.}}{24}{figure.3.15}%
+\contentsline {figure}{\numberline {\textbf {3-16}}{\ignorespaces ACF de los residuos.}}{24}{figure.3.16}%
+\contentsline {figure}{\numberline {\textbf {3-17}}{\ignorespaces Ljung-Box test para los residuos del modelo.}}{24}{figure.3.17}%
 \addvspace {10\p@ }

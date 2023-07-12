@@ -1,32 +1,30 @@
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{vii}{Doc-Start}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{v}{Doc-Start}%
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of figures}{xi}{chapter*.2}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of tables}{xii}{chapter*.3}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of figures}{ix}{chapter*.2}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }List of tables}{x}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introducci\'{o}n}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objetivos}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Objetivo general}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Objetivos específicos}{2}{subsection.1.1.2}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Procesos estocásticos irregularmente espaciados}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Formas de describir un proceso estocástico}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}El proceso de medias móviles irregular de primer orden (IMA)}{4}{section.2.3}%
-\contentsline {subsubsection}{El punto de vista distribucional}{5}{section*.4}%
-\contentsline {subsubsection}{El punto de vista construccionista}{5}{section*.5}%
-\contentsline {section}{\numberline {2.4}El proceso Autorregresivo de primer orden irregular (IAR)}{6}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Estimación}{7}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Modelo autoregresivo complejo irregular (CIAR)}{8}{section.2.5}%
+\contentsline {subsection}{\numberline {2.1.1}Formas de describir un proceso estocástico}{4}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}El proceso de medias móviles irregular de primer orden (IMA)}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}El punto de vista distribucional}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}El punto de vista construccionista}{5}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}El proceso Autorregresivo de primer orden irregular (IAR)}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Estimación}{7}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Modelo autoregresivo complejo irregular (CIAR)}{8}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Modelo autorregresivo de primer orden irregularmente espaciado}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Construcción del modelo}{10}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Implementando propuesta de $\phi _n$}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}El modelo autorregresivo irregularmente espaciado de primer orden}{12}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Propiedades del proceso}{13}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Pronóstico en el modelo IAR}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Estimación}{14}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Estimación por máxima verosimilitud}{14}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Estimación Bootstrap}{15}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Estudio de Simulación Monte Carlo}{15}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Comparación del Modelo IAR vs el CIAR}{20}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Aplicación en datos astronómicos}{21}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Aplicación en datos de espeleotemas\footnote {Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}{21}{section.3.11}%
-\contentsline {chapter}{\numberline {4}Conclusion}{24}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{26}{appendix.A}%
+\contentsline {section}{\numberline {3.8}Estudio de Simulación Monte Carlo}{16}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Comparación del Modelo IAR vs el CIAR}{21}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Aplicación en datos astronómicos}{23}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{26}{chapter.4}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{27}{chapter.4}%

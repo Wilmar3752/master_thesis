@@ -121,7 +121,7 @@ presentamos las propiedades del proceso.
 \end{definition}
 
 \section{Propiedades del proceso}
-If $X_n=\left[X_{\tau_1}, \ldots, X_{\tau_n}\right]^{\prime}$ es un vector aleatorio de un proceso IAR, 
+Si $X_n=\left[X_{\tau_1}, \ldots, X_{\tau_n}\right]^{\prime}$ es un vector aleatorio de un proceso IAR, 
 luego $X_n$ es un vector aleatorio Gaussiano con $\mathrm{m}_n=0$ y matriz de varianzas y covarianza
 dada por
 $$
@@ -170,7 +170,7 @@ Además, $X_{\tau_1} = W_1^{1/2}\varepsilon_{\tau_1}$, por lo tanto $\hat{X}_{\t
 
 Podemos ver que, debido a la forma en que se define el modelo, el error de predicción sigue una distribución normal con media 0 y varianza $W_k$.
 
-\section{Estimación}
+\section{Estimación por máxima verosimilitud}
 
 Sea $X_\tau$ observado en los puntos $\tau_1, ..., \tau_n$, la funcion de verosimilitud para estimar los
 parámetros $\sigma$ y $\phi$ es la siguiente:
@@ -187,26 +187,45 @@ Ahora, aplicamos logaritmo para calcular la log-verosimilitud $l(\phi,\sigma)$
    \end{split}
    \label{eq:LogLikehod}
 \end{equation}
-Donde $W_i$ es definido por la ecuación \ref{eq:w}. Por maximizacion directa de la funcion de log verosimilitud (\ref{eq:LogLikehod}), podemos obtener el estimador de $\sigma^2$
+Donde $W_i$ es definido por la ecuación \ref{eq:w}. Se puede minimizar así:
+
+$$W_i = \frac{\sigma^2(1-\phi^{2\Delta_i})}{1-\phi^2}$$
+donde $W_1= \frac{\sigma^2}{1-\phi^2}$
+
+Reemplazando $W_i$ en \ref{eq:LogLikehod} obtenemos:
+
+
+\begin{equation}
+    -\frac{n}{2}\log(2\pi)-\frac{1}{2}\sum_{i=1}^{n}\log\left(\frac{\sigma^2(1-\phi^{2\Delta_i})}{1-\phi^2}\right)  -\frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{\left(\frac{\sigma^2(1-\phi^{2\Delta_i})}{1-\phi^2}\right)}
+    \label{eq:SigmaLogLike}
+\end{equation}
+
+Por maximizacion directa de la funcion de log verosimilitud (\ref{eq:SigmaLogLike}), podemos obtener el estimador de $\sigma^2$
 
 \begin{equation}
    \begin{split}
-   \frac{\partial(l)}{\partial W_i} &= \frac{1}{2}\sum_{i=1}^{n}\frac{1}{W_i} - \frac{1}{2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i^2} = 0
+   \frac{\partial(l)}{\partial \sigma^2} &= \frac{1}{2}\sum_{i=1}^{n}\frac{1}{\sigma^2} - \frac{1}{2(\sigma^2)^2}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{\frac{1-\phi^{2\Delta_i}}{1-\phi^2}} = 0
    \end{split}
 \end{equation}
+
+Despejando $\sigma^2$
+\begin{equation}
+    \sigma_n^2(\phi) = \frac{1}{n}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{\frac{1-\phi^{2\Delta_i}}{1-\phi^2}}
+    \label{eq:Sigma}
+ \end{equation}
+
+Ahora si reemplazamos la expresion encontrada para $\sigma_n^2(\phi)$ en \ref{eq:SigmaLogLike}, la nueva funcion objetivo para estimar $\phi$ será:
 
 \begin{equation}
-   \begin{split}
-   \hat{\sigma}^2 &= \frac{1}{n}\sum_{i=1}^{n}\frac{\left( X_{\tau_i} - \hat{X}_{\tau_i}\right)^2}{W_i/\sigma}
-   \end{split}
+    q_n(\phi) = -\frac{1}{2}log\left(\sigma_n^2(\phi)\left[\frac{1-\phi^{2\Delta_i}}{1-\phi^2}\right]\right)
+    \label{eq:Objetive}
 \end{equation}
 
-Pero, la estimación de $\phi$ no es posible calcularla por maximizacion directa, por tanto, es necesario acudir a métodos
-iterativos.
+La idea es primero estimar $\phi$ por métodos númericos y luego estimar $\sigma^2$ con la expresion \ref{eq:Sigma}
 \section{Estimación Bootstrap}
 
-Ahora, aplicamos el método bootstrap descrito en \ref{section:Bootstrap} para estimar $\phi_0$ 
-en el proceso IMA con $\sigma_0^2=1$. Sea $X_\tau$ observado en los puntos $\tau_1, \ldots, \tau_{\mathrm{N}}$ y 
+Ahora, aplicamos el método bootstrap para estimar $\phi_0$ 
+en el proceso IAR con $\sigma_0^2=1$. Sea $X_\tau$ observado en los puntos $\tau_1, \ldots, \tau_{\mathrm{N}}$ y 
 considere $\hat{\phi}_{\mathrm{N}}$ como la estimación MLE respectiva. Las innovaciones estandarizadas estimadas son
 $$
 e_{\tau_n}^s=\frac{X_{\tau_n}-\hat{X}_{\phi_n}\left(\hat{\phi}_{\mathrm{N}}\right)}{\sqrt{W_n\left(\hat{\phi}_{\mathrm{N}}\right)}},
@@ -226,13 +245,14 @@ para obtener innovaciones simuladas $\zeta_{t_1}^*, \ldots, \zeta_{t_{\mathrm{N}
 A continuación, estimamos los parámetros a través de MLE suponiendo que los datos son $X_{t_n}^*$. Por lo tanto, podemos repetir este proceso un gran número, B, de veces generando una colección de estimaciones de parámetros bootstrap. A continuación, podemos aproximar la distribución de muestra finita del estimador, $ {\hat{\phi}_{\mathrm{N}}}$, a partir de los valores de los parámetros bootstrap.
 
 \section{Estudio de Simulación Monte Carlo}
-Para probar el modelo \ref{eq:FinalModel} se genera un escenario de simulación, donde se muestran sus propiedades y las de los estimadores por máxima verosimilitud y boostrap, 
-la simulación se realiza considerando $\sigma_0 = 1$, $\phi_0 \in \lbrace\pm 0.1 ,\pm 0.5,\pm 0.9\rbrace$ y $n \in \lbrace20, 50, 100\rbrace$ para que pueda
-observarse el comportamiento irregularmente, los tiempos $\tau_1 , ... , \tau_n$ pueden ser considerados tanto regulares como iregulares con este modelo, en este caso, consideramos
-$\Delta_n = \tau_n - \tau_{n-1} \sim 1 + poisson(\lambda = 2)$ (para asegurar que no haya 0) . La sigura \ref{fig:sim1} muestra el comportamiento
-de una trayectoria simulada para cada una de las combinacióndes de los parametros establecidos en el caso de $\phi > 0$, las marcas rojas en la parte de arriba del gráfico
-muestran mas claramente el comportamiento irregular. La figura \ref{fig:sim2} muestra el mismo comportamiento en el caso de $\phi < 0$. Para efectos de la simulación montecarlo
-simulamos $M=1000$ trayectorias, $\lbrace S_m\rbrace_{m=1}^M$ y estimamos $\phi_0$ para cada configuración.
+
+Para probar el modelo \ref{eq:FinalModel}, se genera un escenario de simulación donde se analizan sus propiedades y las de los estimadores por máxima verosimilitud y bootstrap. La simulación se lleva a cabo considerando valores específicos para los parámetros: $\sigma_0 = 1$, $\phi_0 \in \lbrace\pm 0.1 ,\pm 0.5,\pm 0.9\rbrace$, y $n \in \lbrace20, 50, 100\rbrace$. Estos valores permiten observar el comportamiento irregular del modelo.
+
+En el escenario de simulación, los tiempos $\tau_1 , ... , \tau_n$ pueden ser regulares o irregulares. En este caso, consideramos $\Delta_n = \tau_n - \tau_{n-1} \sim 1 + \text{poisson}(\lambda = 2)$, asegurando así que no haya valores iguales a cero.
+
+La Figura \ref{fig:sim1} muestra la trayectoria simulada para cada combinación de parámetros establecidos cuando $\phi > 0$. Las marcas rojas en la parte superior del gráfico resaltan de manera más clara el comportamiento irregular. Por otro lado, la Figura \ref{fig:sim2} muestra el mismo comportamiento para el caso de $\phi < 0$.
+
+Con fines de simulación de tipo Montecarlo, se generan $M=1000$ trayectorias $\lbrace S_m\rbrace_{m=1}^M$ y se estima $\phi_0$ para cada configuración.
 \begin{figure}[h]
     \includegraphics[width=0.6\textwidth, angle = 270]{Kap3/Fig_Cap3/sim1.eps}
     \caption{simulación del modelo IAR con coeficientes positivos}
@@ -252,7 +272,7 @@ $$
 \hat{\phi}^{\mathrm{MLE}}=\frac{1}{\mathrm{M}} \sum_{m=1}^{\mathrm{M}} \hat{\phi}_m^{\mathrm{MLE}} \quad \text { y } \quad \widehat{\operatorname{se}}\left(\hat{\phi}^{\mathrm{MLE}}\right)=\frac{1}{\mathrm{M}} \sum_{m=1}^{\mathrm{M}} \widehat{\operatorname{se}}\left(\hat{\phi}_m^{\mathrm{MLE}}\right) .
 $$
 
-Por otra parte, para cada trayectory, hemos simulado $\mathrm{B}=500$ trayectorias bootstrap reprensentadas por $\left\{\left\{\mathrm{S}_{m, b}\right\}_{b=1}^{\mathrm{B}}\right\}_{m=1}^{\mathrm{M}}$. Entonces, obtuvimos $\left\{\left\{\hat{\phi}_{m, b}^{\mathrm{b}}\right\}_{b=1}^{\mathrm{B}}\right\}_{m=1}^{\mathrm{M}}$ 
+Por otra parte, para cada trayectoria, hemos simulado $\mathrm{B}=500$ trayectorias bootstrap reprensentadas por $\left\{\left\{\mathrm{S}_{m, b}\right\}_{b=1}^{\mathrm{B}}\right\}_{m=1}^{\mathrm{M}}$. Entonces, obtuvimos $\left\{\left\{\hat{\phi}_{m, b}^{\mathrm{b}}\right\}_{b=1}^{\mathrm{B}}\right\}_{m=1}^{\mathrm{M}}$ 
 (las estimaciones ML). La estimación bootstrap y su error estándar estimado se definen como
 $$
 \hat{\phi}_m^{\mathrm{b}}=\frac{1}{\mathrm{~B}} \sum_{b=1}^{\mathrm{B}} \hat{\phi}_{m, b}^{\mathrm{b}} \quad \text { and } \quad \widehat{\operatorname{se}}^2\left(\hat{\phi}_m^{\mathrm{b}}\right)=\frac{1}{\mathrm{~B}-1} \sum_{b=1}^{\mathrm{B}}\left(\hat{\phi}_{m, b}^{\mathrm{b}}-\hat{\phi}_m^{\mathrm{b}}\right)^2,
@@ -300,13 +320,13 @@ las cuales se ven reflejadas en la tabla \ref{table:performance}
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/sim3.eps}
-    \caption{Esquema general del estudio de Monte Carlo.}
+    \caption{Resultados estimacion por máxima verosimilitud.}
     \label{fig:monte_carlo_res1}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4.eps}
-    \caption{Esquema general del estudio de Monte Carlo.}
+    \caption{Resultados estimacion Boostrap.}
     \label{fig:monte_carlo_res2}
     \end{minipage}
 \end{figure}
@@ -359,13 +379,13 @@ donde $e_i = X_{t_i} - \hat{X}_{\tau_i}$ para $i = 1, ..., n$.
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_IARvsCIAR.eps}
-    \caption{Comportamiento de la simulación, tomando como base el IAR.}
+    \caption{Comportamiento de la simulación, tomando como base el IAR. ECM}
     \label{fig:iarvsciar}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_CIARvsIAR.eps}
-    \caption{Comportamiento de la simulación, tomando como base el CIAR.}
+    \caption{Comportamiento de la simulación, tomando como base el CIAR. ECM}
     \label{fig:ciarvsiar}
     \end{minipage}
 \end{figure}
@@ -373,97 +393,90 @@ donde $e_i = X_{t_i} - \hat{X}_{\tau_i}$ para $i = 1, ..., n$.
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_IARvsCIARphi.eps}
-    \caption{Comportamiento de la simulación, tomando como base el IAR Valor de $\phi$ estimado.}
+    \caption{Comportamiento de la simulación, tomando como base el IAR. $\phi$}
     \label{fig:iarvsciarphi}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.75\linewidth,angle = 270]{Kap3/Fig_Cap3/sim4_CIARvsIARphi.eps}
-    \caption{Comportamiento de la simulación, tomando como base el CIAR Valor de $\phi$ estimado.}
+    \caption{Comportamiento de la simulación, tomando como base el CIAR. $\phi$}
     \label{fig:ciarvsiarphi}
     \end{minipage}
 \end{figure}
 
-la figura \ref{fig:iarvsciar} muestra el resultado de la simulacion de un IAR con las condiciones dadas, y estimando tanto  el IAR como el CIAR
+la figura \ref{fig:iarvsciar} muestra el resultado de la simulacion de un IAR con las condiciones dadas, estimando tanto  el IAR como el CIAR
 con los mismos datos simulados y midiendo el ECM de la predicción. Por otra parte la figura \ref{fig:ciarvsiar} muestra los mismos resultados pero esta vez,
 los datos fueron simulados a partir del CIAR.
 
-Esta simulacion permite llevarnos a la conclusión de que, cuando el parámetro $\phi_n \to -1$ el modelo IAR tiene un rendimiento mucho mejor en cuanto al ECM. 
-Por otra parte cuando el parámetro $\phi \to 0$ el CIAR presenta un mejor comportamiento, sobre todo en muestras grandes. Y cuando $phi$ esta al rededor de 0.5, el CIAR muestra
-un mejor rendimiento en muestras pequeñas, pero el IAR es mejor para muestras grandes, este comportamiento es identico tanto simulando IAR como CIAR.
+Esta simulacion permite llevarnos a la conclusión de que, cuando el parámetro $\phi_n \to -1$ cada modelo es mejor en su contexto independiente del tamaño de muestra, cuando el valor de $\phi$ disminuye, el ECM tiende a ser similar para ambos modelos independiente del contexto de la simulación y el tamaño de muestra. Lo que nos permite concluir que estos modelos son diferentes y cada uno modela estructuras diferentes. Como trabajo futuro se podríá jugar con el parametro imaginario del CIAR. Esto, se sale de los objetivos de este trabajo.
+
+Además las figuras \ref{fig:iarvsciarphi} y \ref{fig:ciarvsiarphi} nos muestran que los valores estimados de $\phi$ son totalmente diferentes, lo que nos afirma la conclusion de que ambos modelos son diferentes, sobre todo en valores cercanos a -1, habríá que encontrar un punto donde sean comparables.
+\newpage
 
 \section{Aplicación en datos astronómicos}
-Estos datos describen una serie temporal de la cantidad de energia en ergios que llega por $cm^2$ en un ancho de banda de un Amstrong  $(10^{(-15)} ergs/s/cm^2 /A)$ desde la galaxia activa (AGN) MCG-6-30-15 medida en la banda K entre agosto de 2006 y julio de 2011. La medición se realizó utilizando
-la cámara ANDICAM, la cual estaba montada en el telescopio de 1.3 metros ubicado en el Observatorio Interamericano Cerro Tololo (CTIO).
+Estos datos de \cite{lira2015long}, describen una serie temporal de la cantidad de energia en ergios que llega por $cm^2$ en un ancho de banda de un Amstrong  $(10^{(-15)} ergs/s/cm^2 /A)$ desde la galaxia activa (AGN) MCG-6-30-15 medida en la banda K entre agosto de 2006 y julio de 2011. La medición se realizó utilizando
+la cámara ANDICAM, la cual estaba montada en el telescopio de 1.3 metros ubicado en el Observatorio Interamericano Cerro Tololo (CTIO). El tiempo $t_n$ está medido en dias julianos heliocentricos.
 
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_data.eps}
-    \caption{Comportamiento de la serie de tiempo.}
-    \label{fig:example}
+    \caption{Comportamiento de la serie de tiempo original.}
+    \label{fig:example_agn}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
     \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_loess.eps}
-    \caption{Comportamiento del $\Delta_n$ de la serie.}
-    \label{fig:example_delta}
+    \caption{Ajuste del modelo Loess.}
+    \label{fig:example_agn_loess}
     \end{minipage}
-\end{figure}
 
-
-
-\section{Aplicación en datos de espeleotemas\protect\footnote{Los espeleotemas son formaciones geológicas que se encuentran en cuevas y se forman a partir de la acumulación de minerales depositados por el agua que gotea del techo o fluye por las paredes de la cueva. Algunos ejemplos de espeleotemas incluyen estalactitas, estalagmitas, columnas y cortinas de piedra caliza.}}
-
-Estos datos han sido descritos y trabajados por \cite{mudelse2014climate} en su libro y los hemos encontrado disponibles en la \href{https://www.manfredmudelsee.com/}{pagina web del autor}. Este conjunto de datos cuenta con 1345 datos donde se miden el pocentaje de 
-isotopos de oxigeno 18 y 16 estables; $\delta^{18}O$ a travez de los años, la escala de tiempo (para años antes de 1950) es basada en
-se basada en 18 edades espectrométricas de masa $U/Th$. La figura \ref{fig:example} muestra el comportamiento de la serie de tiempo descrita y la figura 
-\ref{fig:example_delta} muestra el comportamiento irregularmente espaciado entre los tiempos, note que si esta fuera una serie regular, este grafico seríá una
-linea constante horizontal en $y=1$
-
-
-
-\begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_original.eps}
-    \caption{Comportamiento de la serie de tiempo.}
-    \label{fig:example}
+        \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_detrend.eps}
+        \caption{Residuales del modelo Loess (eliminando tendencias).}
+        \label{fig:example_agn_detrend}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_delta.eps}
-    \caption{Comportamiento del $\Delta_n$ de la serie.}
-    \label{fig:example_delta}
+        \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_ajuste.eps}
+        \caption{Ajuste del modelo IAR a la serie transformada .}
+        \label{fig:agn_ajuste}
     \end{minipage}
 \end{figure}
 
-Ahora procedemos a realizar nuestras estimaciones tanto por Bootstrap como por Máxima Verosimilitud, en este caso, ejemplificamos el uso tanto en la serie original
-como en la serie diferenciada, esta diferenciacion se realiza con el fin de eliminar tendencias y comportamientos ciclicos en nuestra serie
-de tiempo, este caso, $\nabla X_{\tau_n} = X_{\tau_n}-X_{\tau_{n-1}}$ es la serie diferenciada. La figure \ref{fig:example_diff_fit}
-muestra el resultado de la serie diferenciada y la figura \ref{fig:example_fit} muestra los resultados para la serie original.
+La Figura \ref{fig:example_agn} ilustra el comportamiento de la misma, donde los ticks rojos indican patrones irregulares en la serie. Se observan tendencias en ciertos segmentos donde la media no es constante. Para modelar adecuadamente esta serie, es necesario eliminar estas tendencias utilizando un modelo Loess. El resultado de aplicar el modelo Loess se muestra en la Figura \ref{fig:example_agn_loess}.
 
-Los parametros estimados para la serie original son los siguientes:
-
-$$\hat{\phi}^{MLE}= 0.997 \quad \hat{se}(\phi^{MLE})=0.0007 \quad \hat{\sigma}^{2}_{MLE}=0.0112 \quad \hat{se}(\hat{\sigma}^{2}_{MLE})=0.0020$$
-$$\hat{\phi}^{b}= 0.997 \quad \hat{se}(\phi^{b})=0.00086 \quad \hat{\sigma}^{2}_{b}=0.0069  \quad \hat{se}(\hat{\sigma}^{2}_{b})=0.0020$$
-
-Seguido a esto, calculamos los parametros para la serie diferenciada obteniendo:
-$$\hat{\phi}^{MLE}= -0.790 \quad \hat{se}(\phi^{MLE})=0.0136 \quad \hat{\sigma}^{2}_{MLE}=0.0190 \quad \hat{se}(\hat{\sigma}^{2}_{MLE})=0.0037$$
-$$\hat{\phi}^{b}= -0.789 \quad \hat{se}(\phi^{b})=0.0149 \quad \hat{\sigma}^{2}_{b}= 0.0167  \quad \hat{se}(\hat{\sigma}^{2}_{b})=0.04785$$
-
+Posteriormente, en la Figura \ref{fig:example_agn_detrend}, se presenta el comportamiento de los residuos del modelo Loess. Se puede apreciar que hemos logrado eliminar los cambios en la media de la serie. Con base en esta serie transformada, realizaremos las estimaciones del modelo IAR. El ajuste del modelo IAR se muestra en la Figura \ref{fig:agn_ajuste}.
 
 \begin{figure}[h]
     \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_original_estimation.eps}
-    \caption{Comportamiento del modelo estimado con la serie original.}
-    \label{fig:example_fit}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_ajuste_bandas.eps}
+    \caption{Comportamiento de las predicciones y su intervalo de predicción.}
+    \label{fig:example_agn_fit}
     \end{minipage}
     \hfill
     \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/example_data_diff_estimation.eps}
-    \caption{Comportamiento del modelo estimado con la serie diferenciada.}
-    \label{fig:example_diff_fit}
+    \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_qqplot.eps}
+    \caption{qqplot de los residuos del modelo.}
+    \label{fig:example_agn_loess_qqplot}
+    \end{minipage}
+
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_acf.eps}
+        \caption{ACF de los residuos.}
+        \label{fig:example_agn_acf}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=0.8\linewidth,angle = 270]{Kap3/Fig_Cap3/agn_ljung.eps}
+        
+        \caption{Ljung-Box test para los residuos del modelo.}
+        \label{fig:agn_ljung}
     \end{minipage}
 \end{figure}
 
+Los parametros estimados para la serie transformada son los siguientes:
 
+$$\hat{\phi}^{MLE}= -0.69 \quad \hat{se}(\phi^{MLE})=0.0613 $$
+$$\hat{\phi}^{b}= -0.67 \quad \hat{se}(\phi^{b})=0.1012 $$
 
+En este problema, se puede ver que el parametro estimado es negativo, cosa que no podriamos haber logrado con el modelo IAR original. Ahora, miremos como se comportan los supuestos de este modelo. Las figuras \ref{fig:example_agn_loess_qqplot}, \ref{fig:example_agn_acf} y \ref{fig:agn_ljung} nos permite estar tranquilos con los supuestos sobre los errores del modelo, puesto que no hay problemas de normalidad ni dependencia en los mismos.

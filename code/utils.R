@@ -84,7 +84,7 @@ calc_new_x <- function(innovations, w_n, phi_n) {
 iar_mle <- function(par = 0,
                     fn = iar_loglik, data,
                     hessian = TRUE,
-                    method = "L-BFGS-B") {
+                    method = "Brent") {
     p <-  optim(par = par,
           fn = fn, x = data,
           hessian = hessian,
@@ -95,17 +95,18 @@ iar_mle <- function(par = 0,
 
 iar_boot_est <- function(x, num_bootstrap_trayetories) {
   delta_n <- diff(x$t_n)
-  mle <- iar_mle(par = c(-0.99, 0.99),
-                fn = iar_loglik,
+  mle <- iar_mle(fn = iar_loglik,
                 data = x,
                 hessian = TRUE)
-  par <- mle$par
-  w_n <- calc_w(delta_n, par[1], par[2])
-  x_hat <- calc_xhat(x, par[1])
+  par <- mle
+  print('llega')
+  sigma <- calc_sigma(x, par)
+  w_n <- calc_w(delta_n, par, sigma)
+  x_hat <- calc_xhat(x, par)
   innovations <- calc_innovations(x, x_hat = x_hat, w_n = w_n)
-  phi_n <- calc_phi_n(par[1], delta_n)
+  phi_n <- calc_phi_n(par, delta_n)
   phi_boost <- 0
-  sigma_boost <- 0
+  #sigma_boost <- 0
 
   for (i in 1:num_bootstrap_trayetories) {
       innovation_sample <- 0
@@ -113,10 +114,19 @@ iar_boot_est <- function(x, num_bootstrap_trayetories) {
       new_x <- calc_new_x(innovation_sample, w_n, phi_n)
       print(i)
       x$x <- new_x
-      p <- iar_mle(par = c(-0.99, 0.99), fn = iar_loglik, data = x, hessian = FALSE)
-      par <- p$par
-      phi_boost[i] <- par[1]
-      sigma_boost[i] <- par[2]
+      p <- iar_mle(fn = iar_loglik, data = x, hessian = FALSE)
+      par <- p
+      phi_boost[i] <- par
+      #sigma_boost[i] <- par[2]
 }
-return(cbind(phi_boost,sigma_boost))
+return(cbind(phi_boost))
+}
+
+calc_var_pred <- function(x, phi){
+  sigma <- calc_sigma(x, phi)
+  delta_n <- diff(x$t_n)
+  a <- (phi^2)^delta_n
+  b <- sigma / (1 - phi^2)
+  var_pred <- a * b
+  return(var_pred)
 }
